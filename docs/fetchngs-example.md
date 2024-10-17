@@ -36,7 +36,7 @@ track them with code: create a json file like this and put into `config` folder:
 The `input` and `output` parameters are the only two [parameters](https://nf-co.re/fetchngs/1.12.0/parameters/) 
 required by [nf-core/ngs](https://nf-co.re/fetchngs/1.12.0). The *paths* can be defined as *relative to this
 project directory*. We choose to collect the results of this pipeline in the `data` folder,
-since those results are the input for other analyses. You have a copy of this file as `config/config_test.json`.
+since those results are the input for other analyses. You have a copy of this file as `config/fetchngs_test.json`.
 In the `config` folder, you will find a `fetchngs.config` which is another configuration file
 writtein in `groovy` which try to limit resources usage while calling this pipeline.
 
@@ -53,7 +53,7 @@ nextflow using the relative paths to you rconfiguration files
 
 ```bash
 nextflow run nf-core/fetchngs -r 1.12.0 -profile singularity \
-    -config config/fetchngs.config -params-file config/config_test.json -resume
+    -config config/fetchngs.config -params-file config/fetchngs_test.json -resume
 ```
 
 The `-profile` option can enable a set of options in the same time, in this case
