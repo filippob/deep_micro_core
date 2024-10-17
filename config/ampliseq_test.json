@@ -1,0 +1,8 @@
+{
+  "input": "data/test_PRJEB72623_samplesheet.csv",
+  "FW_primer": "CCTACGGGNGGCWGCAG",
+  "RV_primer": "GACTACHVGGGTATCTAATCC",
+  "outdir": "results/test_PRJEB72623",
+  "sample_inference": "pooled",
+  "dada_ref_taxonomy": "silva=138"
+}
