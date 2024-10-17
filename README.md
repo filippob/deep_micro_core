@@ -9,7 +9,8 @@ Code repository for the DeepMicroCore project: Harnessing the power of artificia
 
 ### First experiment
 
-Fastq files to be downloaded from [ENA](https://www.ebi.ac.uk/ena) or [NCBI](https://www.ncbi.nlm.nih.gov/sra/), with the following project IDs:
+Fastq files to be downloaded using the Nextflow pipeline ([see here](https://github.com/filippob/deep_micro_core/blob/main/docs/fetchngs-example.md)) from 
+[ENA](https://www.ebi.ac.uk/ena) or [NCBI](https://www.ncbi.nlm.nih.gov/sra/), with the following project IDs:
 
 - cow milk:  **PRJEB72623** and **PRJNA1103402**
 - cow rumen: **PRJEB77087**
