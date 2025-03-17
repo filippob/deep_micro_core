@@ -14,6 +14,6 @@ Fastq files to be downloaded using the Nextflow pipeline ([see here](https://git
 
 - cow milk:  **PRJEB72623** and **PRJNA1103402**
 - cow rumen: **PRJEB77087**
-- cow rectum/hundgut/feces: **PRJEB77094**
+- cow rectum/hindgut/feces: **PRJEB77094**
 
   
