@@ -24,7 +24,7 @@ chmod +x run_all_qiime2.sh
 
 Where:
 
-* /path/to/input_folder → Folder containing QIIME2 .qza files
+* /path/to/input_folder → Folder containing all files from different runs using the ampliseq pipeline
 * /path/to/output_folder → Folder where the merged results will be saved
 
 ## Expected Output
