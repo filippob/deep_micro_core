@@ -2,7 +2,15 @@
 
 import enum
 
-from sqlalchemy import create_engine, Column, Integer, String, Enum, ForeignKey
+from sqlalchemy import (
+    create_engine,
+    Column,
+    Integer,
+    String,
+    Enum,
+    ForeignKey,
+    UniqueConstraint,
+)
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy import event
@@ -62,6 +70,15 @@ class Dataset(Base):
 
     samples = relationship("Sample", back_populates="dataset")
 
+    __table_args__ = (
+        UniqueConstraint(
+            "description",
+            "specie_substrate",
+            "tissue",
+            name="_description_specie_tissue_uc",
+        ),
+    )
+
     def __repr__(self):
         return (
             f"<Dataset(id={self.id}, description={self.description}, project={self.project}, "
@@ -82,11 +99,16 @@ class Sample(Base):
 
     id = Column(Integer, primary_key=True)
     dataset_id = Column(Integer, ForeignKey("datasets.id"))
+    folder_name = Column(String)
     sample_id = Column(String)
     forward_reads = Column(String)
     reverse_reads = Column(String)
 
     dataset = relationship("Dataset", back_populates="samples")
+
+    __table_args__ = (
+        UniqueConstraint("dataset_id", "sample_id", name="_dataset_sample_uc"),
+    )
 
     def __repr__(self):
         return f"<Sample(id={self.id}, dataset_id={self.dataset_id}, sample_id={self.sample_id}"

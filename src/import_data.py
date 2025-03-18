@@ -102,6 +102,7 @@ def import_samples():
             sample = Sample(
                 dataset_id=dataset.id,
                 sample_id=row[0],
+                folder_name=key,
                 forward_reads=row[1],
                 reverse_reads=row[2],
             )
