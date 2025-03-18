@@ -2,7 +2,7 @@
 
 import enum
 
-from sqlalchemy import create_engine, Column, Integer, String, Enum
+from sqlalchemy import create_engine, Column, Integer, String, Enum, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import event
@@ -30,11 +30,6 @@ Base = declarative_base()
 
 
 # declare enum objects
-class VariableRegionEnum(enum.Enum):
-    V3V4 = "V3-V4"
-    V1V2 = "V1-V2"
-
-
 class StatusEnum(enum.Enum):
     published = "published"
     unpublished = "unpublished"
@@ -48,7 +43,7 @@ class Dataset(Base):
     project = Column(String)
     year = Column(Integer)
     type_technology = Column(String(50))
-    variable_region = Column(Enum(VariableRegionEnum), comment="16S/18S/ITS")
+    variable_region = Column(String(50), nullable=True, comment="16S/18S/ITS")
     specie_substrate = Column(String(50))
     population = Column(String(50))
     tissue = Column(String(50))
@@ -78,6 +73,22 @@ class Dataset(Base):
 
     def __str__(self):
         return f"Dataset {self.id}: {self.description} ({self.project}, {self.year})"
+
+
+class Sample(Base):
+    __tablename__ = "samples"
+
+    id = Column(Integer, primary_key=True)
+    dataset_id = Column(Integer, ForeignKey("datasets.id"))
+    sample_id = Column(String)
+    forward_reads = Column(String)
+    reverse_reads = Column(String)
+
+    def __repr__(self):
+        return (
+            f"<Sample(id={self.id}, dataset_id={self.dataset_id}, sample_id={self.sample_id}, "
+            f"forward_reads={self.forward_reads}, reverse_reads={self.reverse_reads})>"
+        )
 
 
 # creating all tables at once

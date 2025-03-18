@@ -1,9 +1,29 @@
 # import_data.py
 
 import csv
-from .database import get_session, Dataset
+from .database import get_session, Dataset, init_db, Sample
+from .ftp import collect_samples
+
+SAMPLES_DICT = {
+    "201102_M04028_0119_000000000-JBG8C_hindgut": {
+        "internal_id": "201102_M04028_0119_000000000-JBG8C",
+        "tissue": "hindgut",
+    },
+    "201102_M04028_0119_000000000-JBG8C_rumen": {
+        "internal_id": "201102_M04028_0119_000000000-JBG8C",
+        "tissue": "rumen",
+    },
+    "PRJEB72623": {"project_id": "PRJEB72623"},
+    "PRJEB77087": {"project_id": "PRJEB77087"},
+    "PRJEB77094_201026_M04028_0118_000000000-JBFT6": {
+        "project_id": "PRJEB77094",
+        "internal_id": "201026_M04028_0118_000000000-JBFT6",
+    },
+    "PRJNA1103402": {"project_id": "PRJNA1103402"},
+}
 
 
+# beware: not tested
 def import_dataset(row):
     session = get_session()
     new_dataset = Dataset(**row)
@@ -58,3 +78,36 @@ def import_datasets_from_csv(file_path):
         print(f"Imported {len(datasets)} datasets from {file_path}.")
 
     session.close()
+
+
+def import_samples():
+    samples = collect_samples()
+    session = get_session()
+
+    for key, rows in samples.items():
+        # print(f"Key: {key}, Value: {value}")
+
+        query = session.query(Dataset)
+
+        for column, value in SAMPLES_DICT[key].items():
+            query = query.filter(getattr(Dataset, column) == value)
+
+        dataset = query.one()
+
+        for row in rows:
+            sample = Sample(
+                dataset_id=dataset.id,
+                sample_id=row[0],
+                forward_reads=row[1],
+                reverse_reads=row[2],
+            )
+            session.add(sample)
+        session.commit()
+
+        print(f"Samples for {dataset} imported successfully.")
+
+
+if __name__ == "__main__":
+    init_db()
+    import_datasets_from_csv("data/datasets.csv")
+    import_samples()
