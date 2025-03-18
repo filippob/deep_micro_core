@@ -86,3 +86,12 @@ for dataset in datasets:
     for sample in itertools.islice(dataset.samples, 10):
         print(sample)
 ```
+
+## download merged results
+
+Connect to the FTP server and download the merged_results using lftp:
+
+```bash
+$ lftp -u <user>:<password> <ftp_host>
+lftp> mirror merged_results
+```
