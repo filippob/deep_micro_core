@@ -18,6 +18,8 @@ python = "^3.9"
 ipykernel = "^6.29.5"
 python-dotenv = "^1.0.1"
 sqlalchemy = "^2.0.39"
+jupyterlab = "^4.3.6"
+seaborn = "^0.13.2"
 
 [tool.poetry.scripts]
 import_data = "src.import_data:import_data"
