@@ -33,4 +33,4 @@ After running the script, you should see the following output files in the outpu
 * merged-table.qza
 * merged-rep-seqs.qza
 * merged-taxonomy.qza
-* merged-table.tsv (converted from .biom)
+* Exported files in /path/to/output_folder/export and merged-tables.tsv (converted from .biom)
