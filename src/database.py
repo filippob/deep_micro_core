@@ -91,7 +91,7 @@ class Dataset(Base):
         )
 
     def __str__(self):
-        return f"Dataset {self.id}: {self.description} ({self.project}, {self.year})"
+        return f"Dataset {self.id}: {self.description} ({self.project}, {self.tissue})"
 
 
 class Sample(Base):
@@ -111,7 +111,13 @@ class Sample(Base):
     )
 
     def __repr__(self):
-        return f"<Sample(id={self.id}, dataset_id={self.dataset_id}, sample_id={self.sample_id}"
+        return (
+            f"<Sample(id={self.id}, dataset_id={self.dataset_id}, folder_name={self.folder_name}, "
+            f"sample_id={self.sample_id}, forward_reads={self.forward_reads}, reverse_reads={self.reverse_reads})>"
+        )
+
+    def __str__(self):
+        return f"Sample {self.id}: {self.folder_name} ({self.sample_id})"
 
 
 # creating all tables at once

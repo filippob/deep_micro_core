@@ -63,3 +63,26 @@ Or within the virtual environment:
 ```bash
 import_data data/list_dataset.csv
 ```
+
+## Fetch samples from a particular project
+
+To collect samples from a particular project, you can do like this:
+
+```python
+import itertools
+from src.database import get_session, Dataset, Sample
+
+# connect to the database
+session = get_session()
+
+# This will collect all dataset with a relation to samples
+# (datasets that have been analyzed) and will resolve the samples
+datasets = session.query(Dataset).join(Sample).all()
+
+for dataset in datasets:
+    print(dataset)
+
+    # take first 10 samples
+    for sample in itertools.islice(dataset.samples, 10):
+        print(sample)
+```
