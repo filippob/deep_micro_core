@@ -1,10 +1,12 @@
 # import_data.py
 
 import csv
+import argparse
+
 from .database import get_session, Dataset, init_db, Sample
 from .ftp import collect_samples
 
-# define the relation between the results folder name and the
+# define the relationship between the results folder name and the
 # row in the dataset table
 SAMPLES_DICT = {
     "201102_M04028_0119_000000000-JBG8C_hindgut": {
@@ -109,7 +111,19 @@ def import_samples():
         print(f"Samples for {dataset} imported successfully.")
 
 
-if __name__ == "__main__":
+def import_data():
+    parser = argparse.ArgumentParser(
+        description="Import datasets and samples into a sqlite database"
+    )
+
+    parser.add_argument("csv_file", help="Path to the CSV file to import.")
+    args = parser.parse_args()
+
+    # create a database in a data folder relative to project directory
     init_db()
-    import_datasets_from_csv("data/datasets.csv")
+
+    # import datasets from the CSV file
+    import_datasets_from_csv(args.csv_file)
+
+    # import samples from the FTP server and create the relationships
     import_samples()

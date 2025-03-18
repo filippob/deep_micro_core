@@ -1,11 +1,17 @@
 [tool.poetry]
 name = "deep-micro-core"
-version = "0.1.0"
+version = "0.2.0"
 description = "Harnessing the power of artificial intelligence to identify the core microbiome"
-authors = ["Filippo Biscarini <https://github.com/filippob>, Paolo Cozzi <https://github.com/bunop>"]
+authors = [
+    "Filippo Biscarini <https://github.com/filippob>",
+    "Paolo Cozzi <https://github.com/bunop>", 
+    "Milica Škipina <https://github.com/milica-skipina>"
+]
 license = "MIT"
 readme = "README.md"
-package-mode = false
+packages = [
+    { include = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -13,6 +19,8 @@ ipykernel = "^6.29.5"
 python-dotenv = "^1.0.1"
 sqlalchemy = "^2.0.39"
 
+[tool.poetry.scripts]
+import_data = "src.import_data:import_data"
 
 [build-system]
 requires = ["poetry-core"]

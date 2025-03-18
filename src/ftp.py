@@ -9,7 +9,7 @@ load_dotenv()
 
 
 def collect_samples():
-    ftp_host = "webserver.ibba.cnr.it"
+    ftp_host = os.getenv("FTP_HOST")
     ftp_user = os.getenv("FTP_USER")
     ftp_password = os.getenv("FTP_PASS")
 
