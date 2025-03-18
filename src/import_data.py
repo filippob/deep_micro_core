@@ -4,6 +4,8 @@ import csv
 from .database import get_session, Dataset, init_db, Sample
 from .ftp import collect_samples
 
+# define the relation between the results folder name and the
+# row in the dataset table
 SAMPLES_DICT = {
     "201102_M04028_0119_000000000-JBG8C_hindgut": {
         "internal_id": "201102_M04028_0119_000000000-JBG8C",

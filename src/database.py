@@ -4,7 +4,7 @@ import enum
 
 from sqlalchemy import create_engine, Column, Integer, String, Enum, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy import event
 
 from . import project_directory
@@ -60,6 +60,8 @@ class Dataset(Base):
     adapter_fwd = Column(String(50))
     adapter_rev = Column(String(50))
 
+    samples = relationship("Sample", back_populates="dataset")
+
     def __repr__(self):
         return (
             f"<Dataset(id={self.id}, description={self.description}, project={self.project}, "
@@ -84,11 +86,10 @@ class Sample(Base):
     forward_reads = Column(String)
     reverse_reads = Column(String)
 
+    dataset = relationship("Dataset", back_populates="samples")
+
     def __repr__(self):
-        return (
-            f"<Sample(id={self.id}, dataset_id={self.dataset_id}, sample_id={self.sample_id}, "
-            f"forward_reads={self.forward_reads}, reverse_reads={self.reverse_reads})>"
-        )
+        return f"<Sample(id={self.id}, dataset_id={self.dataset_id}, sample_id={self.sample_id}"
 
 
 # creating all tables at once
