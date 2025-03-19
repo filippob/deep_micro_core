@@ -18,7 +18,7 @@ from sqlalchemy import event
 from . import project_directory
 
 DATABASE_URL = f"sqlite:///{project_directory}/data/datasets.sqlite3"
-engine = create_engine(DATABASE_URL, echo=True)
+engine = create_engine(DATABASE_URL, echo=False)
 
 
 # setting pragmas for SQLite
