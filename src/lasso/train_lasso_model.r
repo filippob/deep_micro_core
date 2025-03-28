@@ -224,7 +224,8 @@ collect_metrics(lasso_grid) |>
   print()
 
 ##################################
-writeLines(" - final model")
+print("#####################")
+writeLines(" - FINAL MODEL")
 final_lasso <- finalize_workflow(
   wf1,
   best_model
@@ -236,7 +237,8 @@ print(final_lasso)
 print("train and then evaluate on test data")
 lr_res <- last_fit(
   final_lasso,
-  dt_split
+  dt_split,
+  metrics = metric_set(accuracy, kap, brier_class, mcc)
 ) 
 
 print("test performance of final model")
