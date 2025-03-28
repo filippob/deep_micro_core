@@ -18,3 +18,6 @@ Fastq files to be downloaded using the Nextflow pipeline ([see here](https://git
 
   
 ### Lasso-penalised regression
+
+1. [filter_normalize.r](src/lasso/filter_normalize.r)
+2. [train_lasso_model.r](src/lasso/train_lasso_model.r)
