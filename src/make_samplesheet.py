@@ -42,7 +42,9 @@ else:
 # %% write out
 print("write out samplesheet file")
 
-filename = path.join(mypath, outfile)
+filename = path.abspath(path.join(mypath, '..', outfile))
+print('writing to', filename)
 df.to_csv(filename, sep=',', encoding='utf-8', index=False, header=True, quotechar='"')
 
 print("DONE!")
+
