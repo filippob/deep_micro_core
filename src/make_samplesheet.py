@@ -39,6 +39,10 @@ if len(samples) == len(fastqf):
 else:
     print("N. of samples and n. of files do not match")
 
+# %% add path to file names
+df['forwardReads'] = [path.join(mypath, x) for x in df['forwardReads']]
+df['reverseReads'] = [path.join(mypath, x) for x in df['reverseReads']]
+
 # %% write out
 print("write out samplesheet file")
 
