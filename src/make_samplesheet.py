@@ -26,6 +26,7 @@ samples = listdir(mypath)
 # %% fastqfiles
 print("list of lists with file names per subfolder")
 fastqf = [listdir(path.join(mypath,x)) for x in samples]
+fastqf = [sorted(x) for x in fastqf] ## sort files within subfodler
 
 # %% sanity check
 print("N. of samples:", len(samples))
@@ -56,3 +57,4 @@ df.to_csv(filename, sep=',', encoding='utf-8', index=False, header=True, quotech
 
 print("DONE!")
 
+fastqf
