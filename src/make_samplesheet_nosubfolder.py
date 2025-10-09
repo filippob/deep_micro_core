@@ -22,6 +22,8 @@ mypath = '/home/ngs/220620_M04028_0148_000000000-K74V8'
 outfile = 'deep_micro_core/data/samplesheet-K74V8.csv' ## path relative to HOME
 separator = "_" ## string separator for data filenames
 extension = ".fastq.gz" ## data file extension
+first_sample = 1 ## first sample to be used
+last_sample = 50 ## last sample to be used in the sequence
 
 print("### PARAMETERS #######################")
 print("path to data:", mypath)
@@ -45,7 +47,11 @@ print("N. of samples:", len(samples))
 print('N. of file pairs:', len(fastqf))
 
 # %% list of lists with paired-end files per sample
+print("subsetting the list of samples")
 samples = [x for x in samples if x.capitalize() != 'Undetermined']
+samples = [x for x in samples if int(x) in list(range(first_sample,(last_sample+1),1))]
+print('N. of samples left after subsetting:', len(samples))
+
 files = []
 
 for s in samples:
