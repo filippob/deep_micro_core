@@ -24,6 +24,7 @@ separator = "_" ## string separator for data filenames
 extension = ".fastq.gz" ## data file extension
 first_sample = 1 ## first sample to be used
 last_sample = 50 ## last sample to be used in the sequence
+sample_prefix = "sample" ## prefix -if any- to prepend to sample names (e.g. if these are only numeric and would not match the ampliseq pattern: ^[a-zA-Z][a-zA-Z0-9_]+$)
 
 print("### PARAMETERS #######################")
 print("path to data:", mypath)
@@ -71,6 +72,9 @@ else:
 # %% add path to file names
 df['forwardReads'] = [path.join(mypath, x) for x in df['forwardReads']]
 df['reverseReads'] = [path.join(mypath, x) for x in df['reverseReads']]
+
+# %% add prefix to sample name
+df['sampleID'] = sample_prefix + '_' + df['sampleID'].astype(str)
 
 # %% write out
 print("write out samplesheet file")
