@@ -11,6 +11,7 @@ Created on Mon Oct  6 08:29:46 2025
 ## project folder > sample folders > R1/R2 fastq files
 
 # %% libraries 
+import re
 import pandas as pd
 from os import listdir, path
 from os.path import isfile, join
@@ -40,7 +41,8 @@ samples = list(samples)
 files = []
 
 for s in samples:
-    temp = [x for x in fastqf if s in x]
+    pattern = r'^' + s
+    temp = [x for x in fastqf if re.match(pattern, x)]
     files.append(sorted(temp))
 
 # %% make dataframe from list of lists
