@@ -45,14 +45,13 @@ print("N. of samples:", len(samples))
 print('N. of file pairs:', len(fastqf))
 
 # %% list of lists with paired-end files per sample
-samples = list(samples)
+samples = [x for x in samples if x.capitalize() != 'Undetermined']
 files = []
 
 for s in samples:
-    if s != 'Undetermined':
-        pattern = r'^' + s + separator
-        temp = [x for x in fastqf if re.match(pattern, x)]
-        files.append(sorted(temp))
+    pattern = r'^' + s + separator
+    temp = [x for x in fastqf if re.match(pattern, x)]
+    files.append(sorted(temp))
 
 # %% make dataframe from list of lists
 if len(samples) == len(files):
