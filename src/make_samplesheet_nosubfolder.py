@@ -11,16 +11,24 @@ Created on Mon Oct  6 08:29:46 2025
 ## project folder > sample folders > R1/R2 fastq files
 
 # %% libraries 
+import os
 import re
 import pandas as pd
 from os import listdir, path
 from os.path import isfile, join
 
 # %% parameters
-mypath = 'data/prova-nosubfolder/'
-outfile = 'samplesheet.csv'
-separator = "."
-extension = ".txt"
+mypath = '/home/ngs/220620_M04028_0148_000000000-K74V8'
+outfile = 'deep_micro_core/data/samplesheet-K74V8.csv' ## path relative to HOME
+separator = "_" ## string separator for data filenames
+extension = ".fastq.gz" ## data file extension
+
+print("### PARAMETERS #######")
+print("path to data:", mypath)
+print("output samplesheet:", outfile)
+print("data filenames separator", separator)
+print("data file extension", extension)
+print("######################")
 
 # %% samples
 print("list of files")
@@ -41,7 +49,7 @@ samples = list(samples)
 files = []
 
 for s in samples:
-    pattern = r'^' + s
+    pattern = r'^' + s + separator
     temp = [x for x in fastqf if re.match(pattern, x)]
     files.append(sorted(temp))
 
@@ -60,8 +68,7 @@ df['reverseReads'] = [path.join(mypath, x) for x in df['reverseReads']]
 
 # %% write out
 print("write out samplesheet file")
-
-filename = path.abspath(path.join(mypath, '..', outfile))
+filename = path.abspath(path.join(os.environ['HOME'], outfile))
 print('writing to', filename)
 df.to_csv(filename, sep=',', encoding='utf-8', index=False, header=True, quotechar='"')
 
