@@ -29,8 +29,11 @@ sample_prefix = "sample" ## prefix -if any- to prepend to sample names (e.g. if 
 print("### PARAMETERS #######################")
 print("path to data:", mypath)
 print("output samplesheet:", outfile)
-print("data filenames separator", separator)
-print("data file extension", extension)
+print("data filenames separator:", separator)
+print("data file extension:", extension)
+print("first sample:", first_sample)
+print("last sample:", last_sample)
+print("sample name prefix", sample_prefix)
 print("######################################")
 
 # %% samples
