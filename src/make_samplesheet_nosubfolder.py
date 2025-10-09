@@ -23,12 +23,12 @@ outfile = 'deep_micro_core/data/samplesheet-K74V8.csv' ## path relative to HOME
 separator = "_" ## string separator for data filenames
 extension = ".fastq.gz" ## data file extension
 
-print("### PARAMETERS #######")
+print("### PARAMETERS #######################")
 print("path to data:", mypath)
 print("output samplesheet:", outfile)
 print("data filenames separator", separator)
 print("data file extension", extension)
-print("######################")
+print("######################################")
 
 # %% samples
 print("list of files")
