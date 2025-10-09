@@ -49,9 +49,10 @@ samples = list(samples)
 files = []
 
 for s in samples:
-    pattern = r'^' + s + separator
-    temp = [x for x in fastqf if re.match(pattern, x)]
-    files.append(sorted(temp))
+    if s != 'Undetermined':
+        pattern = r'^' + s + separator
+        temp = [x for x in fastqf if re.match(pattern, x)]
+        files.append(sorted(temp))
 
 # %% make dataframe from list of lists
 if len(samples) == len(files):
