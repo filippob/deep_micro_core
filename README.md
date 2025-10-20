@@ -9,7 +9,7 @@ Code repository for the DeepMicroCore project: Harnessing the power of artificia
 
 ## First experiment
 
-Fastq files to be downloaded using the Nextflow pipeline ([see here](https://github.com/filippob/deep_micro_core/blob/main/docs/fetchngs-example.md)) from 
+Fastq files to be downloaded using the Nextflow pipeline ([see here](https://github.com/filippob/deep_micro_core/blob/main/docs/fetchngs-example.md)) from
 [ENA](https://www.ebi.ac.uk/ena) or [NCBI](https://www.ncbi.nlm.nih.gov/sra/), with the following project IDs:
 
 - cow milk:  **PRJEB72623** and **PRJNA1103402**
@@ -40,7 +40,7 @@ Type `exit` to exit the virtual environment.
 
 ## Define environment variables
 
-Create a `.env` file in the project root directory and provide your 
+Create a `.env` file in the project root directory and provide your
 credentials (not to be stored in the github repository):
 
 ```text
@@ -95,3 +95,8 @@ Connect to the FTP server and download the merged_results using lftp:
 $ lftp -u <user>:<password> <ftp_host>
 lftp> mirror merged_results
 ```
+
+### Lasso-penalised regression
+
+1. [filter_normalize.r](src/lasso/filter_normalize.r)
+2. [train_lasso_model.r](src/lasso/train_lasso_model.r)

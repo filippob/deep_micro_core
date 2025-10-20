@@ -2,6 +2,7 @@
 data/
 results/
 merged_results/
+merged_results.*/
 
 # Nextflow ignored files
 work/
