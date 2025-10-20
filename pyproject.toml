@@ -23,6 +23,7 @@ seaborn = "^0.13.2"
 biopython = "^1.85"
 biom-format = "^2.1.16"
 scikit-learn = "^1.6.1"
+fastcluster = "^1.3.0"
 
 [tool.poetry.scripts]
 import_data = "src.import_data:import_data"

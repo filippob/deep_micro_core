@@ -2,12 +2,14 @@
 
 import csv
 import argparse
+import sqlalchemy.exc
 
 from .database import get_session, Dataset, init_db, Sample
 from .ftp import collect_samples
 
 # define the relationship between the results folder name and the
-# row in the dataset table
+# row in the dataset table. You need to specify enough information to
+# uniquely identify the dataset, for example project_id and tissue or internal_id
 SAMPLES_DICT = {
     "201102_M04028_0119_000000000-JBG8C_hindgut": {
         "internal_id": "201102_M04028_0119_000000000-JBG8C",
@@ -24,6 +26,8 @@ SAMPLES_DICT = {
         "internal_id": "201026_M04028_0118_000000000-JBFT6",
     },
     "PRJNA1103402": {"project_id": "PRJNA1103402"},
+    "PRJNA635258": {"project_id": "PRJNA635258", "specie_substrate": "mouse"},
+    "K74V8": {"project_id": "PRJNA1003434"},
 }
 
 
@@ -79,7 +83,7 @@ def import_datasets_from_csv(file_path):
         session.add_all(datasets)
         session.commit()
 
-        print(f"Imported {len(datasets)} datasets from {file_path}.")
+    print(f"Imported {len(datasets)} datasets from {file_path}.")
 
     session.close()
 
@@ -89,27 +93,34 @@ def import_samples():
     session = get_session()
 
     for key, rows in samples.items():
-        # print(f"Key: {key}, Value: {value}")
-
         query = session.query(Dataset)
 
         for column, value in SAMPLES_DICT[key].items():
             query = query.filter(getattr(Dataset, column) == value)
 
-        dataset = query.one()
+        try:
+            dataset = query.one()
 
-        for row in rows:
-            sample = Sample(
-                dataset_id=dataset.id,
-                sample_id=row[0],
-                folder_name=key,
-                forward_reads=row[1],
-                reverse_reads=row[2],
-            )
-            session.add(sample)
-        session.commit()
+            for row in rows:
+                sample = Sample(
+                    dataset_id=dataset.id,
+                    sample_id=row[0],
+                    folder_name=key,
+                    forward_reads=row[1],
+                    reverse_reads=row[2],
+                )
+                session.add(sample)
+            session.commit()
 
-        print(f"Samples for {dataset} imported successfully.")
+            print(f"Samples for {dataset} imported successfully.")
+
+        except sqlalchemy.exc.NoResultFound as exc:
+            print(f"No dataset found for key {key}, skipping samples import.")
+            raise exc
+
+        except sqlalchemy.exc.MultipleResultsFound as exc:
+            print(f"Multiple datasets found for key {key}, skipping samples import.")
+            raise exc
 
 
 def import_data():
