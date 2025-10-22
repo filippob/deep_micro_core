@@ -34,7 +34,7 @@ echo "convert from biom to tsv"
 echo "########################"
 biom convert -i ${project_home}/${input_file} -o ${project_home}/tmp/feature-table.tsv --to-tsv
  
-nrows=`wc -l ${project_home}/${input_file}`
+nrows=$(wc -l < ${project_home}/${input_file})
 nfeatures=$((nrows - 2))
 echo "########################"
 echo "Initial number of features is: ${nfeatures}"
@@ -51,7 +51,7 @@ echo "converting back from tsv to biom"
 base_name=$(basename ${input_file})
 biom convert -i $project_home/tmp/table.filtered.tsv -o $outdir/filtered_${base_name} --table-type="OTU table" --to-hdf5
 
-nrows=`wc -l $project_home/tmp/table.filtered.tsv`
+nrows=$(wc -l < $project_home/tmp/table.filtered.tsv)
 nfeatures=$((nrows - 1))
 echo "########################"
 echo "Final number of features is: ${nfeatures}"
