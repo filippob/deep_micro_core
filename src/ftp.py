@@ -1,9 +1,12 @@
 import os
 import io
 import csv
+import logging
 
 from dotenv import load_dotenv
 from ftplib import FTP
+
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 
@@ -48,7 +51,7 @@ def collect_samples():
                 break
 
         if csv_file:
-            print(f"Found CSV file: {csv_file} in {directory}/input")
+            logger.info(f"Found CSV file: {csv_file} in {directory}/input")
 
             # Read the CSV file content
             with io.BytesIO() as csv_buffer:
