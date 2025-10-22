@@ -10,21 +10,21 @@ library("data.table")
 ## PARAMETERS
 args = commandArgs(trailingOnly=TRUE)
 if (length(args) >= 1) {
-  
+
   #loading the parameters
   if (file_ext(args[1]) %in% c("r","R")) {
-    
+
     source(args[1])
     # source("Analysis/hrr/config.R")
   } else {
-    
+
     load(args[1])
   }
-  
+
 } else {
   #this is the default configuration, used for development and debug
   writeLines('Using default config')
-  
+
   #this dataframe should be always present in config files, and declared
   #as follows
   config = NULL
@@ -35,7 +35,7 @@ if (length(args) >= 1) {
     prjfolder = "/home/filippo/Documents/deep_micro_core",
     count_table = "Analysis/lasso/filtered_normalized_counts.RDS", ## biom format file (from the ampliseq pipeline)
     analysis_folder = "Analysis/lasso",
-    conf_file = "config/Metadata_CNR_IVI.csv",
+    conf_file = "merged_results/Metadata.csv",
     suffix = "cow_microbiomes",
     project = "deep_micro_core",
     target_column = "Tissue",
@@ -66,7 +66,7 @@ gc()
 
 ## random subset of columns (COMMENT/UNCOMMENT as needed)
 if (config$subsampling) {
-  
+
   print("subsampling columns")
   vec = sample(c(TRUE,FALSE), size = ncol(tX), replace = TRUE, prob = c(0.1,0.9))
   tX <- tX[,vec]
@@ -88,7 +88,7 @@ rm(temp)
 
 ## random subset of samples (COMMENT/UNCOMMENT as needed)
 if (config$subsampling) {
-  
+
   print("subsampling rows")
   tX <- tX |> slice_sample(prop = 0.5)
   print(paste("N. of samples after subsampling is:", nrow(tX)))
@@ -140,22 +140,22 @@ rm(temp)
 ###############################################
 # lasso_spec <- multinom_reg(mode = "classification", penalty = 0.1, mixture = 1) %>%
 #   set_engine("glmnet")
-# 
+#
 # print(lasso_spec)
-# 
+#
 # wf <- workflow() %>%
 #   add_recipe(rec) %>%
 #   add_model(lasso_spec)
-# 
+#
 # print(wf)
-# 
+#
 # lasso_fit <- wf %>%
 #   fit(data = train_set)
-# 
+#
 # lasso_fit %>%
 #   pull_workflow_fit() %>%
 #   tidy()
-# 
+#
 # lasso_fit %>%
 #   pull_workflow_fit() %>%
 #   tidy() %>%
@@ -190,7 +190,7 @@ lasso_grid <- tune_grid(
 
 print("best models from fine-tuning")
 lasso_grid %>%
-  collect_metrics() |> 
+  collect_metrics() |>
   arrange(desc(mean)) |>
   head(10) |>
   print()
@@ -239,11 +239,11 @@ lr_res <- last_fit(
   final_lasso,
   dt_split,
   metrics = metric_set(accuracy, kap, brier_class, mcc)
-) 
+)
 
 print("test performance of final model")
 lr_res %>%
-  collect_metrics() |> 
+  collect_metrics() |>
   print()
 
 print("confusion matrix")
@@ -267,7 +267,7 @@ important_variables <- final_lasso %>%
     Importance = abs(Importance),
     Variable = fct_reorder(Variable, Importance)
   ) %>%
-  filter(Importance > 0) 
+  filter(Importance > 0)
 
 print("most important variables")
 print(head(important_variables))
