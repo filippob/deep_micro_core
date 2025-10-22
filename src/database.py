@@ -10,6 +10,8 @@ from sqlalchemy import (
     Enum,
     ForeignKey,
     UniqueConstraint,
+    JSON,
+    func,
 )
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
@@ -69,6 +71,7 @@ class Dataset(Base):
     adapter_rev = Column(String(50))
 
     samples = relationship("Sample", back_populates="dataset")
+    param = relationship("Param", back_populates="dataset", uselist=False)
 
     __table_args__ = (
         UniqueConstraint(
@@ -92,6 +95,26 @@ class Dataset(Base):
 
     def __str__(self):
         return f"Dataset {self.id}: {self.description} ({self.project}, {self.tissue})"
+
+    @classmethod
+    def find_by_fw_primer(cls, session, primer_value):
+        """Find datasets by FW_primer value"""
+        return (
+            session.query(cls)
+            .join(Param)
+            .filter(func.json_extract(Param.params, "$.FW_primer") == primer_value)
+            .all()
+        )
+
+    @classmethod
+    def find_by_json_key(cls, session, json_path, value):
+        """Trova dataset con un valore JSON specifico"""
+        return (
+            session.query(cls)
+            .join(Param)
+            .filter(func.json_extract(Param.params, json_path) == value)
+            .all()
+        )
 
 
 class Sample(Base):
@@ -118,6 +141,31 @@ class Sample(Base):
 
     def __str__(self):
         return f"Sample {self.id}: {self.folder_name} ({self.sample_id})"
+
+
+class Param(Base):
+    __tablename__ = "params"
+
+    id = Column(Integer, primary_key=True)
+    dataset_id = Column(Integer, ForeignKey("datasets.id"), unique=True, nullable=False)
+    params = Column(JSON, nullable=False)  # Store parameters as JSON
+
+    dataset = relationship("Dataset", back_populates="param")
+
+    def __repr__(self):
+        return (
+            f"<Param(id={self.id}, dataset_id={self.dataset_id}, params={self.params})>"
+        )
+
+    def __str__(self):
+        return (
+            f"Param {self.id}: FW_primer='{self.params.get('FW_primer')}', "
+            f"RV_primer='{self.params.get('RV_primer')}', truncq={self.params.get('truncq')}, "
+            f"trunclenf={self.params.get('trunclenf')}, trunclenr={self.params.get('trunclenr')}, "
+            f"trunc_qmin={self.params.get('trunc_qmin')}, trunc_rmin={self.params.get('trunc_rmin')}, "
+            f"max_ee={self.params.get('max_ee')}, min_len={self.params.get('min_len')}, "
+            f"max_len={self.params.get('max_len')}"
+        )
 
 
 # creating all tables at once

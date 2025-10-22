@@ -5,8 +5,8 @@ import argparse
 import logging
 import sqlalchemy.exc
 
-from .database import get_session, Dataset, init_db, Sample
-from .ftp import collect_samples
+from .database import get_session, Dataset, init_db, Sample, Param
+from .ftp import collect_samples, collect_params
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -192,6 +192,50 @@ def import_samples():
             raise exc
 
 
+def import_params():
+    """Import parameters from FTP server into the database"""
+    params_dict = collect_params()
+    session = get_session()
+
+    for directory, params_data in params_dict.items():
+        logger.info(f"Processing params for directory: {directory}")
+
+        # collect the proper dataset: the directory I got from collect_params()
+        # is the key in SAMPLES_DICT
+        if directory not in SAMPLES_DICT:
+            logger.warning(f"No mapping found for directory: {directory}")
+            continue
+
+        query = session.query(Dataset)
+        for column, value in SAMPLES_DICT[directory].items():
+            query = query.filter(getattr(Dataset, column) == value)
+
+        dataset = query.one_or_none()
+
+        if dataset:
+            existing_param = (
+                session.query(Param).filter_by(dataset_id=dataset.id).first()
+            )
+
+            if existing_param:
+                logger.debug(
+                    f"Parameters for dataset {dataset} already exist. Skipping"
+                )
+                continue
+            else:
+                logger.info(f"Adding new parameters for dataset {dataset}.")
+                # save parameters as json
+                params = Param(dataset_id=dataset.id, params=params_data)
+                session.add(params)
+
+            logger.info(f"Updated params for dataset: {dataset}")
+        else:
+            logger.warning(f"No dataset found for directory: {directory}")
+
+    session.commit()
+    session.close()
+
+
 def import_data():
     parser = argparse.ArgumentParser(
         description="Import datasets and samples into a sqlite database"
@@ -208,3 +252,6 @@ def import_data():
 
     # import samples from the FTP server and create the relationships
     import_samples()
+
+    # store parameters in database
+    import_params()
