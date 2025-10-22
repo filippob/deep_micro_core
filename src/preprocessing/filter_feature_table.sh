@@ -2,8 +2,10 @@
 
 ## script that filters the microbiome feature table (ASV/OTU) by total frequency and number of samples
 ## it works with biom files and uses the biom-format package (http://biom-format.org/index.html; https://anaconda.org/bioconda/biom-format)
+## it uses awk for filtering: temporary files are place in a generated tmp/ folder and removed at the end of operations
 ## you need to tune the parameters below:
-## i) type of quality score; ii) quality threshold (depends on the quality score that has been selected)
+## i) <path/to/project/home/folder>; ii) <path/to/input/file> (relative to project home); iii) <path/to/output/folder> (relative to project home); 
+## iv) minimum number of overall counts (frequency); v) minimum number of samples with counts
 
 set -x
 
@@ -28,7 +30,10 @@ fi
 
 ## 1) CONVERTING FROM BIOM TO TSV
 echo "convert from biom to tsv"
-biom convert -i ${input_file} -o ${project_home}/tmp/feature-table.tsv --to-tsv
+biom convert -i ${project_home}/${input_file} -o ${project_home}/tmp/feature-table.tsv --to-tsv
+ 
+n=`wc -l ${project_home}/${input_file}`
+echo "Initial number of features is: ${n}-2"
 
 ## 2) FILTERING (AWK)
 echo "filtering"
