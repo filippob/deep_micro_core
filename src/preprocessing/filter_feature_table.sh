@@ -29,20 +29,33 @@ fi
 
 
 ## 1) CONVERTING FROM BIOM TO TSV
+echo "########################"
 echo "convert from biom to tsv"
+echo "########################"
 biom convert -i ${project_home}/${input_file} -o ${project_home}/tmp/feature-table.tsv --to-tsv
  
-n=`wc -l ${project_home}/${input_file}`
-echo "Initial number of features is: ${n}-2"
+nrows=`wc -l ${project_home}/${input_file}`
+nfeatures=$((nrows - 2))
+echo "########################"
+echo "Initial number of features is: ${nfeatures}"
+echo "########################"
 
 ## 2) FILTERING (AWK)
+echo "########################"
 echo "filtering"
+echo "########################"
 awk -v minf="$min_frequency" -v mins="$min_samples" 'NR==1 {next} NR==2 {print; next} {sum=0; n=0; for(i=2;i<=NF;i++){sum+=$i; if($i>0)n++} if(sum>=minf && n>=mins) print}' ${project_home}/tmp/feature-table.tsv > $project_home/tmp/table.filtered.tsv
 
 ## 3) CONVERT BACK TO BIOM
 echo "converting back from tsv to biom"
 base_name=$(basename ${input_file})
 biom convert -i $project_home/tmp/table.filtered.tsv -o $outdir/filtered_${base_name} --table-type="OTU table" --to-hdf5
+
+nrows=`wc -l $project_home/tmp/table.filtered.tsv`
+nfeatures=$((nrows - 1))
+echo "########################"
+echo "Final number of features is: ${nfeatures}"
+echo "########################"
 
 ## remove temporary files
 echo "removing temporary folder and files"
