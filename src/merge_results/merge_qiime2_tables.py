@@ -2,6 +2,7 @@ import os
 import sys
 import subprocess
 
+
 def find_table_qza_files(input_folder):
     """Pronalazi sve fajlove sa nazivom 'table.qza' u svim podfolderima."""
     table_files = []
@@ -9,6 +10,7 @@ def find_table_qza_files(input_folder):
         if "table.qza" in files:
             table_files.append(os.path.join(root, "table.qza"))
     return table_files
+
 
 def merge_tables(table_files, output_folder):
     """Poziva 'qiime feature-table merge' sa pronađenim table.qza fajlovima."""
@@ -31,12 +33,21 @@ def merge_tables(table_files, output_folder):
         print(f"❌ Error occurred while merging tables: {e}")
         return None
 
+
 def export_table(merged_table, output_folder):
     """Eksportuje merged-table.qza pomoću 'qiime tools export'."""
     export_path = os.path.join(output_folder, "export/table")
     os.makedirs(export_path, exist_ok=True)
 
-    command = ["qiime", "tools", "export", "--input-path", merged_table, "--output-path", export_path]
+    command = [
+        "qiime",
+        "tools",
+        "export",
+        "--input-path",
+        merged_table,
+        "--output-path",
+        export_path,
+    ]
 
     try:
         subprocess.run(command, check=True)
@@ -46,10 +57,11 @@ def export_table(merged_table, output_folder):
         print(f"❌ Error while exporting table: {e}")
         return None
 
+
 def convert_biom_to_tsv(export_path, output_folder):
     """Konvertuje feature-table.biom u table.tsv koristeći 'biom convert'."""
     biom_file = os.path.join(export_path, "feature-table.biom")
-    tsv_output = os.path.join(output_folder, "merged-tables.tsv")
+    tsv_output = os.path.join(output_folder, "merged-table.tsv")
 
     if not os.path.exists(biom_file):
         print(f"❌ File {biom_file} does not exist")
@@ -62,6 +74,7 @@ def convert_biom_to_tsv(export_path, output_folder):
         print(f"✅ .tsv file created:{tsv_output}")
     except subprocess.CalledProcessError as e:
         print(f"❌ Error while creating .tsv: {e}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:

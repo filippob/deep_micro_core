@@ -5,21 +5,21 @@ library("biomformat")
 ## PARAMETERS
 args = commandArgs(trailingOnly=TRUE)
 if (length(args) >= 1) {
-  
+
   #loading the parameters
   if (file_ext(args[1]) %in% c("r","R")) {
-    
+
     source(args[1])
     # source("Analysis/hrr/config.R")
   } else {
-    
+
     load(args[1])
   }
-  
+
 } else {
   #this is the default configuration, used for development and debug
   writeLines('Using default config')
-  
+
   #this dataframe should be always present in config files, and declared
   #as follows
   config = NULL
@@ -30,7 +30,7 @@ if (length(args) >= 1) {
     prjfolder = "/home/filippo/Documents/deep_micro_core",
     count_table = "merged_results/temp/prova.biom", ## biom format file (from the ampliseq pipeline)
     analysis_folder = "Analysis/lasso",
-    conf_file = "config/Metadata_CNR_IVI.csv",
+    conf_file = "merged_results/Metadata.csv",
     suffix = "cow_microbiomes",
     min_counts_asv = 20,
     min_samples_asv = 3,
@@ -61,13 +61,13 @@ sample_asv = colSums(X != 0)
 asv_counts = rowSums(X)
 asv_samples = rowSums(X != 0)
 
-print("summary of count per sample")  
+print("summary of count per sample")
 summary(sample_counts)
-print("summary of n. of ASV with counts > 0 per sample")  
+print("summary of n. of ASV with counts > 0 per sample")
 summary(sample_asv)
-print("summary of count per ASV")  
+print("summary of count per ASV")
 summary(asv_counts)
-print("summary of n. of samples with counts > 0 per ASV")  
+print("summary of n. of samples with counts > 0 per ASV")
 summary(asv_samples)
 
 writeLines(" - filter count table")
@@ -89,7 +89,7 @@ writeLines(" - CSS normalization")
 
 ## define function for cumlative sums
 cumsum <- function(x,p) {
-  
+
   x <- sort(x, decreasing = TRUE)
   quantile_index = round(length(x) * p)
   return(sum(x[1:quantile_index]))
