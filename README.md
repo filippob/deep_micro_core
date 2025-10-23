@@ -66,21 +66,10 @@ import_data data/list_dataset.csv
 
 ## Create metadata CSV file
 
-You can create the metadata CSV file for the samples collected in the database
-using sqlite3 command line tool. Open the slite3 shell:
+You can create the metadata CSV file for the samples collected in the database:
 
 ```bash
-sqlite3 data/datasets.sqlite3
-```
-
-Then run the following command to export the metadata:
-
-```sql
-.mode csv
-.output merged_results/Metadata.csv
-SELECT t2.sample_id AS `Sample ID`, t1.project_id AS `Project ID`, t1.project AS `Project Name`, t1.tissue AS `Tissue`, t1.specie_substrate AS `Species/Substrate`, t1.data_repository AS `Data repository` FROM datasets AS t1 INNER JOIN samples AS t2 ON t1.id = t2.dataset_id ;
-.output stdout
-.quit
+poetry run create_metadata.py --output-dir merged_results
 ```
 
 ## Some example queries from the database
