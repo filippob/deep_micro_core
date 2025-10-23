@@ -31,20 +31,20 @@ SAMPLES_DICT = {
         "internal_id": "201026_M04028_0118_000000000-JBFT6",
     },
     "PRJNA1103402": {"project_id": "PRJNA1103402"},
-    "PRJNA635258": {"project_id": "PRJNA635258", "specie_substrate": "mouse"},
-    "K74V8": {
-        "project_id": "PRJNA1003434",
+    "PRJNA1003434-feces": {
         "description": "8 goats: 16s",
-        # "tissue": "feces",
-        "tissue": "rumen",
+        "tissue": "feces",
+        "project_id": "PRJNA1003434",
+    },
+    "KYFH4": {
+        "project": "MORGOAT",
+        "tissue": "milk",
+        "internal_id": "KYFH4",
     },
 }
 
 # define sample ranges as a list of sample IDs for each folder name key
-SAMPLES_RANGES = {
-    # "K74V8": [f"sample_{i + 1}" for i in range(0, 30)],  # feces
-    "K74V8": [f"sample_{i + 1}" for i in range(30, 59)],  # rumen
-}
+SAMPLES_RANGES = {}
 
 
 # beware: not tested
@@ -133,6 +133,11 @@ def import_samples():
 
     for key, rows in samples.items():
         query = session.query(Dataset)
+
+        # skip if no mapping is found (folder to be add)
+        if key not in SAMPLES_DICT:
+            logger.warning(f"No mapping found for key: {key}, skipping samples import.")
+            continue
 
         # build the query filters based on the SAMPLES_DICT
         # add a column filter for each key-value pair

@@ -83,7 +83,9 @@ SELECT t2.sample_id AS `Sample ID`, t1.project_id AS `Project ID`, t1.project AS
 .quit
 ```
 
-## Fetch samples from a particular project
+## Some example queries from the database
+
+### Fetch samples from a particular project
 
 To collect samples from a particular project, you can do like this:
 
@@ -104,6 +106,34 @@ for dataset in datasets:
     # take first 10 samples
     for sample in itertools.islice(dataset.samples, 10):
         print(sample)
+```
+
+### Collect dataset and parameters used
+
+```python
+import csv
+import sys
+
+from src.database import get_session, Dataset, Param
+
+session = get_session()
+
+header = [
+    "dataset_id", "project", "FW_primer", "RV_primer",
+    "trunclenf", "trunclenr", "trunc_qmin", "max_ee"
+]
+
+writer = csv.writer(sys.stdout, delimiter=",")
+writer.writerow(header)
+
+# collect datasets that have samples
+for dataset in session.query(Dataset).filter(Dataset.samples.any()):
+    writer.writerow([
+        dataset.id, dataset.project, dataset.param.params.get("FW_primer"),
+        dataset.param.params.get("RV_primer"), dataset.param.params.get("trunclenf"),
+        dataset.param.params.get("trunclenr"), dataset.param.params.get("trunc_qmin"),
+        dataset.param.params.get("max_ee")
+    ])
 ```
 
 ## download merged results
