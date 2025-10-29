@@ -9,12 +9,26 @@ Code repository for the DeepMicroCore project: Harnessing the power of artificia
 
 ## First experiment
 
-Fastq files to be downloaded using the Nextflow pipeline ([see here](https://github.com/filippob/deep_micro_core/blob/main/docs/fetchngs-example.md)) from
+Fastq files to be downloaded using the Nextflow pipeline ([see here](docs/fetchngs-example.md)) from
 [ENA](https://www.ebi.ac.uk/ena) or [NCBI](https://www.ncbi.nlm.nih.gov/sra/), with the following project IDs:
 
 - cow milk:  **PRJEB72623** and **PRJNA1103402**
 - cow rumen: **PRJEB77087**
 - cow rectum/hindgut/feces: **PRJEB77094**
+
+## download merged results
+
+Connect to the FTP server and download the merged_results using lftp:
+
+```bash
+$ lftp -u <user>:<password> <ftp_host>
+lftp> mirror merged_results
+```
+
+## Merge results
+
+Follow the instructions in the [merge-results.md](docs/merge-results.md) to
+merge the results from multiple datasets.
 
 ## Install stuff with poetry
 
@@ -30,10 +44,10 @@ To install *all the required dependencies*. Then you can run the scripts in the
 environment with `poetry shell`:
 
 ```bash
-poetry run python scripts/import_data.py
+poetry run python scripts/import_data.py <list datasets.csv>
 # Or
 poetry shell
-python scripts/import_data.py
+python scripts/import_data.py <list datasets.csv>
 ```
 
 Type `exit` to exit the virtual environment.
@@ -55,7 +69,7 @@ Download the **list_dataset** google sheet as a CSV file and save it in the
 `data` directory. Then run the following script:
 
 ```bash
-poetry run import_data data/list_dataset.csv
+poetry run import_data data/list_datasets.csv
 ```
 
 Or within the virtual environment:
@@ -69,7 +83,7 @@ import_data data/list_dataset.csv
 You can create the metadata CSV file for the samples collected in the database:
 
 ```bash
-poetry run create_metadata.py --output-dir merged_results
+poetry run create_metadata --output-dir merged_results
 ```
 
 ## Some example queries from the database
@@ -125,16 +139,7 @@ for dataset in session.query(Dataset).filter(Dataset.samples.any()):
     ])
 ```
 
-## download merged results
-
-Connect to the FTP server and download the merged_results using lftp:
-
-```bash
-$ lftp -u <user>:<password> <ftp_host>
-lftp> mirror merged_results
-```
-
-### Lasso-penalised regression
+## Lasso-penalised regression
 
 1. [filter_normalize.r](src/lasso/filter_normalize.r)
 2. [train_lasso_model.r](src/lasso/train_lasso_model.r)
