@@ -66,7 +66,10 @@ FTP_PASS=<your FTP password>
 ## Collect metadata in a sqlite database
 
 Download the **list_dataset** google sheet as a CSV file and save it in the
-`data` directory. Then run the following script:
+`data` directory. Next, you need to edit `src/import_data.py` to add any additional
+metadata for specific datasets (see the existing examples in the file).
+After that, you can run the import script to collect the metadata
+in the sqlite database:
 
 ```bash
 poetry run import_data data/list_datasets.csv

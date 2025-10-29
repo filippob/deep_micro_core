@@ -36,10 +36,20 @@ SAMPLES_DICT = {
         "tissue": "feces",
         "project_id": "PRJNA1003434",
     },
+    "PRJNA1003434-rumen": {
+        "description": "8 goats: 16s",
+        "tissue": "rumen",
+        "project_id": "PRJNA1003434",
+    },
     "KYFH4": {
         "project": "MORGOAT",
         "tissue": "milk",
         "internal_id": "KYFH4",
+    },
+    "KR9NH": {
+        "project": "LEGUPLUS",
+        "tissue": "gut",
+        "specie_substrate": "pig",
     },
 }
 
