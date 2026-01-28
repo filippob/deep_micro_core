@@ -1,5 +1,6 @@
 ## SET-UP
 library("biomformat")
+library("data.table")
 
 
 ## PARAMETERS
@@ -28,12 +29,14 @@ if (length(args) >= 1) {
     #genotypes = "Analysis/hrr/goat_thin.ped",
     repo = "/home/filippo/Documents/deep_micro_core/deep_micro_core",
     prjfolder = "/home/filippo/Documents/deep_micro_core",
-    count_table = "merged_results/temp/prova.biom", ## biom format file (from the ampliseq pipeline)
+    count_table = "merged_results/filtered_feature-table.biom", ## biom format file (from the ampliseq pipeline)
     analysis_folder = "Analysis/lasso",
     conf_file = "merged_results/Metadata.csv",
-    suffix = "cow_microbiomes",
+    suffix = "dm_microbiomes",
     min_counts_asv = 20,
     min_samples_asv = 3,
+    tissue = "rumen",
+    species = "",
     project = "deep_micro_core",
     # sample_column = "sample",
     force_overwrite = FALSE
@@ -70,6 +73,37 @@ summary(asv_counts)
 print("summary of n. of samples with counts > 0 per ASV")
 summary(asv_samples)
 
+## METADATA
+metadata <- fread(file.path(config$prjfolder, config$conf_file))
+
+writeLines(" - subset data")
+print(paste("Selected tissue is:", config$tissue))
+print(paste("Selected species is:", config$species))
+
+if (config$tissue != "") metadata <- filter(metadata, Tissue == config$tissue)
+if (config$species != "") metadata <- filter(metadata, `Species/Substrate` == config$species)
+
+vec = colnames(X) %in% metadata$`Sample ID`
+X <- X[,vec]
+nsamples = ncol(X)
+
+print(paste("N. of samples after subsetting:", nsamples))
+
+sample_counts = colSums(X)
+sample_asv = colSums(X != 0)
+asv_counts = rowSums(X)
+asv_samples = rowSums(X != 0)
+
+print("summary of count per sample after subsetting")
+summary(sample_counts)
+print("summary of n. of ASV with counts > 0 per sample after subsetting")
+summary(sample_asv)
+print("summary of count per ASV after subsetting")
+summary(asv_counts)
+print("summary of n. of samples with counts > 0 per ASV after subsetting")
+summary(asv_samples)
+
+## FILTERING
 writeLines(" - filter count table")
 print("thresholds:")
 print(paste("min n. of counts per ASV", config$min_counts_asv))
