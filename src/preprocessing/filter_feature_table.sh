@@ -11,13 +11,13 @@ set -x
 
 ## setting the enviornmnent
 currpath=$(pwd)
-project_home="$HOME/deep_micro_core"
-input_file="merged_results/feature-table.biom"
+project_home="$HOME/Documents/deep_micro_core"
+input_file="merged_results/merged-table/b402ae88-4ddc-4994-84c3-a3ea732a534b/data/feature-table.biom"
 outdir="${project_home}/merged_results"
 core=4
 
-min_frequency=100
-min_samples=10
+min_frequency=10
+min_samples=1
 
 if [ ! -d "${outdir}" ]; then
 	mkdir -p ${outdir}
@@ -34,7 +34,7 @@ echo "convert from biom to tsv"
 echo "########################"
 biom convert -i ${project_home}/${input_file} -o ${project_home}/tmp/feature-table.tsv --to-tsv
  
-nrows=$(wc -l < ${project_home}/${input_file})
+nrows=$(wc -l < ${project_home}/tmp/feature-table.tsv)
 nfeatures=$((nrows - 2))
 echo "########################"
 echo "Initial number of features is: ${nfeatures}"
