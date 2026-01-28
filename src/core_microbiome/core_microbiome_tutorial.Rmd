@@ -1,0 +1,263 @@
+---
+title: "core microbiome"
+output: html_document
+date: "2026-01-23"
+bibliography: '../../docs/references.bib'  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Core microbiome
+
+The core microbiome is the set of taxa that consistently occur within a microbiome. 
+The core microbiome is typically based on taxon abundances and occupancy across multiple samples (sometimes with spatiotemporal variation).
+The core microbiome is assumed to be associated with the maintenance of baseline (eco)system functioning.
+
+Alternatively, instead of consistent taxon presence across 100% of samples, 
+the microbiome hosts a stable functional core of common functional gene categories and metabolic pathways (shotgun-sequencing: metagenomics vs metataxonomics).
+
+
+### Overview of methods
+
+The methods outlined below are taken from @Custer2023:
+
+- **Abundance-based**: core membership is assigned to the most abundant taxa; taxa are ranked from highest to lowest based on their relative abundances. Core membership is assigned to taxa accounting for a portion of the first 75% of total reads. This method is strongly affected by sequencing depth. Drawbacks: i) taxa don't have to be consistently present across samples to be core members; ii) spurious core assignments can arise when a taxon is highly abundant in one subset of samples and absent in others
+- **Occupancy-based**: core membership is assigned to taxa occurring in a user-defined proportion of samples, usually $>$ 50% (sometimes
+up to $100\%$). This method can include rare taxa because it is independent of abundance. Drawbacks are: i) studies based on a limited number of samples; ii) it fails to consider the importance of abundance; iii) this method is affected by sequencing depth (rare individuals may drop below detection limits with limited sequencing)
+- **Abundance and occupancy-based**: core membership is based on the abundance (i.e., accounting for a minimum number of reads in a data set) and occupancy of taxa (i.e., found in a minimum proportion of samples). This method accounts for both sample size and sampling effort. E.g. occupancy > 50% and total abundance > 0.02% across all samples. Drawback: sensitivity to different user-defined cutoffs
+
+
+## Example 1
+
+```{r}
+# BiocManager::install("edgeR")
+library("CoreMicrobiomeR")
+
+head(demo_md)
+```
+
+```{r}
+head(demo_otu)
+```
+
+```{r}
+head(demo_tax)
+```
+
+
+```{r}
+#To run input data
+core_1 <- CoreMicrobiome(
+ otu_table = demo_otu,
+ tax_table = demo_tax,
+ metadata_table = demo_md,
+ filter_type = "occupancy_fun_filter", #Or "abundance_fun_filter", Or "combined_filter"
+ percent = 0.25,
+ method = "css",  # Or "srs", "rrarefy", "tmm", "tmmwsp", "rle", "upperquartile", "none"
+ beta_diversity_method = "jaccard",
+ top_percentage = 10  # Adjust the percentage as needed for core/non-core OTUs
+)
+
+#To view the core otus obtained
+core_1[["core_otus"]]
+#To view the taxonomy of the obtained core otus
+core_1[["core_otus_tax"]]
+```
+
+```{r}
+library("tidyr")
+library("dplyr")
+library("ggplot2")
+library("data.table")
+```
+
+```{r}
+basefolder = "~/Documents/deep_micro_core"
+fname = "merged_results/Metadata.csv"
+metadata = fread(file.path(basefolder, fname))
+```
+
+```{r}
+metadata <- metadata |> rename(Sample = `Sample ID`)
+```
+
+
+```{r}
+fname = "merged_results/merged-table.tsv"
+otu_table = fread(file.path(basefolder, fname))
+otu_table <- sample_frac(otu_table, size = 0.1)
+```
+
+```{r}
+otu_table <- otu_table |> rename(Sample = `#OTU ID`)
+```
+
+```{r}
+fname = "merged_results/merged-taxonomy/b6a856c0-0113-4c3c-a9ee-6dd9b4889c09/data/taxonomy.tsv"
+tax_table = fread(file.path(basefolder, fname))
+
+tax_table <- tax_table |>
+  tidyr::separate(col = Taxon, into = c("Kingdom","Phylum","Class","Order","Family","Genus","Species","strain","confidence"), sep = ";") |>
+  filter(`Feature ID` %in% otu_table$Sample)
+```
+
+```{r}
+tax_table <- tax_table |> rename (`OTU ID` = `Feature ID`)
+```
+
+
+```{r}
+metadata |>
+  group_by(Tissue) |>
+  summarise(N=n())
+```
+
+```{r}
+filtered_metadata = filter(metadata, Tissue == "rumen") |> select(-c(`Project ID`, `Project Name`, `Data repository`)) 
+vec <- names(otu_table) %in% filtered_metadata$Sample
+vec[1] = TRUE
+filtered_otu = otu_table[,vec, with = FALSE]
+```
+
+```{r}
+vec = (rowSums(filtered_otu[,-1]) > 10)
+filtered_otu <- filtered_otu[vec,]
+```
+
+```{r}
+tax_table <- tax_table |> filter(`OTU ID` %in% filtered_otu$Sample)
+tax_table <- tax_table |> select(-c(strain, confidence))
+```
+
+```{r}
+temp <- na.omit(tax_table)
+```
+
+
+```{r}
+core_1 <- CoreMicrobiome(
+ otu_table = filtered_otu,
+ tax_table = tax_table,
+ metadata_table = filtered_metadata,
+ filter_type = "occupancy_fun_filter", #Or "abundance_fun_filter", Or "combined_filter"
+ percent = 0.5,
+ method = "css",  # Or "srs", "rrarefy", "tmm", "tmmwsp", "rle", "upperquartile", "none"
+ beta_diversity_method = "jaccard",
+ top_percentage = 10  # Adjust the percentage as needed for core/non-core OTUs
+)
+```
+
+
+## Example 2
+
+```{r}
+# install.packages("devtools")
+# devtools::install_github("MayaGans/CoreMicro")
+library("CoreMicro")
+```
+
+```{r}
+library("CoreMicro")
+data(arabidopsis_rhizo)
+```
+
+```{r}
+arabidopsis_rhizo |>
+  core_methods() |>
+  core_plots()
+```
+
+#### Abundance based core
+
+```{r}
+psT <- abundance_core(arabidopsis_rhizo, readn = 0.1)
+arabidopsis_psT <- arabidopsis_rhizo[arabidopsis_rhizo$X %in% psT,]
+```
+
+How does `readn = 0.1` works?
+
+1. We first order taxa by their abundance (sum of counts/reads across all samples):
+
+```{r}
+rank1 = rowSums(arabidopsis_rhizo[,-1]) |> sort(decreasing = TRUE)
+head(rank1)
+```
+
+2. We calculate the cumulative sums relative to the total sum: everything which is below the threshold is assigned to the core microbiome: 
+
+- e.g. the threshold is 0.05 --> we take the first 7 taxa as core microbiome
+
+```{r}
+(cumsum(rank1)/sum(rank1))[1:20]
+```
+
+
+#### Occupancy based core
+
+```{r, eval=FALSE}
+prT <- occupancy_core(arabidopsis_rhizo, prop_rep =  0.75)
+arabidopsis_prT <- arabidopsis_rhizo[arabidopsis_rhizo$X %in% prT,]
+```
+
+#### Abundance and occupancy based core
+
+```{r, eval=FALSE}
+prrT <- abundance_and_occupancy_core(arabidopsis_rhizo, prop_rep =  0.5, prop_reads = 0.005)
+arabidopsis_prrT <- arabidopsis_rhizo[arabidopsis_rhizo$X %in% prrT,]
+
+
+#pullout mean and variance to use when parameterizing dm draws in simulations
+core_abundance <- summarise_taxa(arabidopsis_rhizo[arabidopsis_rhizo$X %in% prrT,]) %>% summary() %>% data.frame() 
+non_core_abundance <- summarise_taxa(arabidopsis_rhizo[!(arabidopsis_rhizo$X %in% prrT),]) %>% summary()
+
+
+#core_abundance[core_abundance$Var2 == "     Mean"]
+#core_abundance[10,3]
+```
+
+#### Hard cutoff core
+
+```{r, eval=FALSE}
+hcT <- hard_cutoff(arabidopsis_rhizo, cutoff = 25, sites = 25)
+arabidopsis_hcT <- arabidopsis_rhizo[arabidopsis_rhizo$X %in% hcT,]
+```
+
+### Our data
+
+```{r}
+psT <- abundance_core(filtered_otu, readn = 0.1)
+core_rumen <- filtered_otu[filtered_otu$Sample %in% psT,]
+```
+
+```{r}
+psT <- occupancy_core(filtered_otu, prop_rep = 0.8)
+core_rumen <- filtered_otu[filtered_otu$Sample %in% psT,]
+```
+
+```{r, eval=FALSE}
+prrT <- abundance_and_occupancy_core(filtered_otu, prop_rep =  0.75, prop_reads = 0.005)
+core_rumen <- filtered_otu[filtered_otu$Sample %in% prrT,]
+
+
+#pullout mean and variance to use when parameterizing dm draws in simulations
+core_abundance <- summarise_taxa(core_rumen)
+non_core_abundance <- summarise_taxa(filtered_otu[!filtered_otu$Sample %in% prrT,])
+```
+
+```{r}
+M <- filtered_otu[,-1]
+vec = colSums(M) ## total reads per sample
+rM <- sweep(M, 2, vec, FUN = '/') ## matrix of relative abundances
+rowMeans(rM) |> sort(decreasing = TRUE) |> head(20)
+```
+
+
+```{r, eval=FALSE}
+hcT <- hard_cutoff(filtered_otu, cutoff = 25, sites = 25)
+core_rumen <- filtered_otu[filtered_otu$Sample %in% hcT,]
+```
+
+### References
+
