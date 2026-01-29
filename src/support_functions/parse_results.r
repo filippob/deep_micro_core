@@ -89,7 +89,7 @@ mltools::mcc(confusionM = temp)
 print("#####################")
 print("Important variables")
 
-fname = file.path(config$prjfolder, config$res_folder, "variable_importance.csv")
+fname = file.path(config$prjfolder, config$res_folder, "important_variables.csv")
 important_variables <- fread(fname)
 fname = file.path(config$prjfolder, config$taxonomy_file)
 taxonomy = fread(fname)
@@ -120,5 +120,24 @@ p <- important_variables %>%
 
 fname = file.path(config$res_folder, "variable_importance.png")
 ggsave(filename = fname, plot = p, device = "png")
+
+#######################
+print("Selected coefficients from the lasso model")
+
+fname = file.path(config$prjfolder, config$res_folder, "selected_variables.csv")
+coeffs <- fread(fname)
+
+coeffs <- coeffs |>
+  inner_join(taxonomy, by = c("term" = "Feature ID"))
+
+coeffs <- separate(coeffs,
+                  col = Taxon,
+                  into = c("domain","phylum","class","order","family","genus","species","strain","score"),
+                  sep = ";")
+
+coeffs = unite(data = coeffs, col = "taxon", c(order,family, genus, species), sep = "-")
+coeffs$taxon = gsub("-*$","",coeffs$taxon)
+coeffs = mutate(coeffs, taxon = fct_reorder(taxon, estimate))
+coeffs = mutate(coeffs, Variable = fct_reorder(term, estimate))
 
 print("DONE!")
