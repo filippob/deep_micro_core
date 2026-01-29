@@ -208,11 +208,17 @@ lr_res %>%
   print()
 
 print("confusion matrix")
-lr_res %>% collect_predictions() %>%
+conf_mat <- lr_res %>% collect_predictions() %>%
   group_by(.pred_class, Tissue) %>%
   summarise(N=n()) %>%
-  spread(key = ".pred_class", value = N) |>
-  print()
+  spread(key = ".pred_class", value = N)
+  
+print(conf_mat)
+
+conf_mat <- conf_mat |> gather(key = "prediction", value = "count", -Tissue)
+
+fname = file.path(config$analysis_folder, "confusion_matrix.csv")
+fwrite(x = conf_mat, file = fname, sep = ",")
 
 ######################################
 ## Variable Importance
