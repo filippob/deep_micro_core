@@ -67,3 +67,6 @@ After running the script, you should see the following output files in the outpu
 * merged-rep-seqs.qza
 * merged-taxonomy.qza
 * Exported files in /path/to/output_folder/export and merged-table.tsv (converted from .biom)
+
+You can *reverse mirror* the `merged_results` folder back to the FTP server to
+share data with others.
