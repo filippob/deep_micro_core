@@ -1,6 +1,7 @@
 ## SET-UP
 library("CoreMicro")
 library("biomformat")
+library("data.table")
 
 
 ## PARAMETERS
