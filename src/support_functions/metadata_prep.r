@@ -164,13 +164,33 @@ rab_sub_rumen <- rab_sub
 
 ################################################################################
 
+
+################################################################################
+## milk metadata (MORGOAT): repo KYFH4
+morgoat_mapping = "milk_MORGOAT/mapping_file.csv"
+
+fname = file.path(prjfolder, metadata_folder, morgoat_mapping)
+
+morgoat_map = fread(fname)
+morgoat_map$repo = "KYFH4"
+morgoat_map$sample_id = paste(morgoat_map$repo, "sample", morgoat_map$sample, sep = "_")
+
+morgoat_map <- morgoat_map |> 
+  rename(`Sample ID` = sample_id, sample_id = sample, subject_id = goat_id, `Project ID` = repo) |>
+  mutate(subject_id = as.character(subject_id), `Project Name` = "MORGOAT") |>
+  select(-c(timepoint, udder_health, Antibiotic, treatment)) |>
+  mutate(sample_id = as.character(sample_id))
+
+
+################################################################################
+
 ## DEEP MICRO CORE: GLOBAL METADATA
 metadata = fread(file.path(prjfolder, conf_file))
 
 metadata |> filter(`Project ID` == "PRJNA1103402", Tissue == "milk") |> nrow()
-sum(rab_sub$experiment_accession %in% metadata$`Sample ID`)
+sum(morgoat_map$`Sample ID` %in% metadata$`Sample ID`)
 
 
 bind_rows(rab_sub_160, rab_sub_219, casco_sub, farminn_map, rab_map_gut,
-          rab_sub_rumen) |>
+          rab_sub_rumen, morgoat_map) |>
   nrow()
