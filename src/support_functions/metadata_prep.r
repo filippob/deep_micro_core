@@ -120,6 +120,22 @@ farminn_map <- farminn_map |>
   rename(sample_id = nid, subject_id = cow) |>
   mutate(subject_id = paste(`Project ID`, subject_id, sep="-"), sample_id = as.character(sample_id))
 
+################################################################################
+
+################################################################################
+## gut metadata (RABOLA): repo PRJEB77094
+rabola_mapping = "gut_RABOLA/mapping_file.csv"
+
+fname = file.path(prjfolder, metadata_folder, rabola_mapping)
+rab_map = fread(fname)
+
+rab_map <- rab_map |>
+  mutate(`Project ID` = "PRJEB77094", `Project Name` = "RABOLA", `Sample ID` = paste(`Project ID`,"_",nid,"_S",nid,"_L001", sep="")) |>
+  rename(subject_id = cow, sample_id = nid) |>
+  select(c(sample_id, `Project ID`, `Project Name`, subject_id, `Sample ID`)) |>
+  mutate(subject_id = paste(`Project ID`, subject_id, sep="-"), sample_id = as.character(sample_id))
+
+rab_map_gut <- rab_map
 
 ################################################################################
 
@@ -127,8 +143,8 @@ farminn_map <- farminn_map |>
 metadata = fread(file.path(prjfolder, conf_file))
 
 metadata |> filter(`Project ID` == "PRJNA1103402", Tissue == "milk") |> nrow()
-sum(farminn_map$sample_id %in% metadata$`Sample ID`)
+sum(rab_map_gut$`Sample ID` %in% metadata$`Sample ID`)
 
 
-bind_rows(rab_sub_160, rab_sub_219, casco_sub, farminn_map) |>
+bind_rows(rab_sub_160, rab_sub_219, casco_sub, farminn_map, rab_map_gut) |>
   nrow()
