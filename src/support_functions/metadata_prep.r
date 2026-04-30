@@ -139,12 +139,38 @@ rab_map_gut <- rab_map
 
 ################################################################################
 
+################################################################################
+## rumen metadata (RABOLA): repo PRJEB77087
+rabola_submission = "rumen_RABOLA/filereport_read_run_PRJEB77087.tsv"
+rabola_mapping = "rumen_RABOLA/mapping_file.csv"
+
+fname = file.path(prjfolder, metadata_folder, rabola_submission)
+rab_sub = fread(fname)
+fname = file.path(prjfolder, metadata_folder, rabola_mapping)
+rab_map = fread(fname)
+
+rab_sub$sample_id = gsub("^.*/|\\..*$","",rab_sub$submitted_ftp)
+rab_sub <- select(rab_sub, c(sample_id, experiment_accession, study_accession))
+rab_sub$nid = gsub("_.*$","",rab_sub$sample_id)
+rab_map <- select(rab_map, c(nid, cow)) |> mutate(nid = as.character(nid))
+
+rab_sub <- rab_sub |> inner_join(rab_map, by = "nid") |>
+  mutate(`Project Name` = "RABOLA") |>
+  select(c(nid, experiment_accession, study_accession, cow, `Project Name`)) |>
+  rename(`Sample ID` = experiment_accession, sample_id = nid, subject_id = cow, `Project ID` = study_accession) |>
+  mutate(subject_id = as.character(subject_id))
+
+rab_sub_rumen <- rab_sub
+
+################################################################################
+
 ## DEEP MICRO CORE: GLOBAL METADATA
 metadata = fread(file.path(prjfolder, conf_file))
 
 metadata |> filter(`Project ID` == "PRJNA1103402", Tissue == "milk") |> nrow()
-sum(rab_map_gut$`Sample ID` %in% metadata$`Sample ID`)
+sum(rab_sub$experiment_accession %in% metadata$`Sample ID`)
 
 
-bind_rows(rab_sub_160, rab_sub_219, casco_sub, farminn_map, rab_map_gut) |>
+bind_rows(rab_sub_160, rab_sub_219, casco_sub, farminn_map, rab_map_gut,
+          rab_sub_rumen) |>
   nrow()
