@@ -184,13 +184,32 @@ morgoat_map <- morgoat_map |>
 
 ################################################################################
 
+################################################################################
+## pig gut metadata (LEGUPLUS): repo KR9NH
+leguplus_mapping = "gut_LEGUPLUS/mapping_file.csv"
+
+fname = file.path(prjfolder, metadata_folder, leguplus_mapping)
+leguplus_map = fread(fname)
+leguplus_map$repo = "KR9NH"
+leguplus_map$sample_id = paste(leguplus_map$repo, "sample", leguplus_map$`sample-id`, sep = "_")
+
+leguplus_map <- leguplus_map |> 
+  rename(`Sample ID` = sample_id, sample_id = `sample-id`, subject_id = animal, `Project ID` = repo) |>
+  mutate(subject_id = as.character(subject_id), `Project Name` = "LEGUPLUS") |>
+  select(-c(timepoint, sex, box, treatment, experiment, group)) |>
+  mutate(sample_id = as.character(sample_id))
+
+
+################################################################################
+
+
 ## DEEP MICRO CORE: GLOBAL METADATA
 metadata = fread(file.path(prjfolder, conf_file))
 
 metadata |> filter(`Project ID` == "PRJNA1103402", Tissue == "milk") |> nrow()
-sum(morgoat_map$`Sample ID` %in% metadata$`Sample ID`)
+sum(leguplus_map$`Sample ID` %in% metadata$`Sample ID`)
 
 
 bind_rows(rab_sub_160, rab_sub_219, casco_sub, farminn_map, rab_map_gut,
-          rab_sub_rumen, morgoat_map) |>
+          rab_sub_rumen, morgoat_map, leguplus_map) |>
   nrow()
