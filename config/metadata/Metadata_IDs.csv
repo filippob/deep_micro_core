@@ -1,0 +1,952 @@
+Sample ID,Project ID,Project Name,Tissue,Species/Substrate,Data repository,subject_id
+R_100_S100_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-289
+R_101_S101_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-294
+R_102_S102_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-307
+R_103_S103_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-8
+R_104_S104_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-2
+R_105_S105_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-4
+R_106_S106_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-12
+R_107_S107_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-20
+R_108_S108_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-44
+R_109_S109_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-69
+R_110_S110_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-295
+R_111_S111_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-313
+R_112_S112_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-325
+R_113_S113_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-332
+R_114_S114_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-355
+R_57_S57_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-14
+R_58_S58_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-297
+R_59_S59_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-311
+R_60_S60_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-314
+R_61_S61_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-321
+R_62_S62_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-357
+R_63_S63_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-359
+R_64_S64_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-9
+R_65_S65_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-34
+R_66_S66_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-338
+R_67_S67_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-11
+R_68_S68_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-17
+R_69_S69_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-30
+R_70_S70_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-73
+R_71_S71_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-289
+R_72_S72_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-294
+R_73_S73_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-307
+R_74_S74_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-8
+R_75_S75_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-2
+R_76_S76_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-4
+R_77_S77_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-12
+R_78_S78_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-20
+R_79_S79_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-44
+R_80_S80_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-69
+R_81_S81_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-295
+R_82_S82_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-313
+R_83_S83_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-325
+R_84_S84_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-332
+R_85_S85_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-355
+R_86_S86_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-14
+R_87_S87_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-297
+R_88_S88_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-311
+R_89_S89_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-314
+R_90_S90_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-321
+R_91_S91_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-357
+R_92_S92_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-359
+R_93_S93_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-9
+R_94_S94_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-34
+R_95_S95_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-338
+R_96_S96_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-11
+R_97_S97_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-17
+R_98_S98_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-30
+R_99_S99_L001,"",FARM-INN,rumen,cow,on the server at CNR-IBBA,JBG8C-73
+H_10_S10_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-289
+H_11_S11_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-294
+H_12_S12_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-307
+H_13_S13_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-8
+H_14_S14_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-4
+H_15_S15_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-12
+H_16_S16_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-69
+H_17_S17_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-313
+H_18_S18_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-332
+H_19_S19_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-297
+H_1_S1_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-14
+H_20_S20_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-9
+H_21_S21_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-11
+H_22_S22_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-17
+H_23_S23_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-73
+H_24_S24_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-20
+H_25_S25_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-295
+H_26_S26_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-355
+H_27_S27_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-325
+H_28_S28_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-14
+H_29_S29_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-297
+H_2_S2_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-311
+H_30_S30_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-311
+H_31_S31_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-314
+H_32_S32_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-321
+H_33_S33_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-357
+H_34_S34_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-359
+H_35_S35_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-9
+H_36_S36_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-34
+H_37_S37_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-338
+H_38_S38_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-11
+H_39_S39_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-17
+H_3_S3_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-314
+H_40_S40_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-30
+H_41_S41_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-73
+H_42_S42_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-289
+H_43_S43_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-294
+H_44_S44_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-307
+H_45_S45_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-8
+H_46_S46_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-2 DEL 25-11
+H_47_S47_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-2 DEL 11-11
+H_48_S48_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-4
+H_49_S49_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-12
+H_4_S4_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-321
+H_50_S50_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-20
+H_51_S51_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-69
+H_52_S52_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-295
+H_53_S53_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-313
+H_54_S54_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-325
+H_55_S55_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-332
+H_56_S56_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-355
+H_5_S5_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-357
+H_6_S6_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-359
+H_7_S7_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-34
+H_8_S8_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-338
+H_9_S9_L001,"",FARM-INN,hindgut,cow,on the server at CNR-IBBA,JBG8C-30
+PRJEB77094_10_S10_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-183
+PRJEB77094_11_S11_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-183
+PRJEB77094_12_S12_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-183
+PRJEB77094_13_S13_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-193
+PRJEB77094_14_S14_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-193
+PRJEB77094_15_S15_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-193
+PRJEB77094_16_S16_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-202
+PRJEB77094_17_S17_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-202
+PRJEB77094_18_S18_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-202
+PRJEB77094_19_S19_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-575
+PRJEB77094_1_S1_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-65
+PRJEB77094_20_S20_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-575
+PRJEB77094_21_S21_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-575
+PRJEB77094_22_S22_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-95
+PRJEB77094_23_S23_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-95
+PRJEB77094_24_S24_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-99
+PRJEB77094_25_S25_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-99
+PRJEB77094_26_S26_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-192
+PRJEB77094_27_S27_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-192
+PRJEB77094_28_S28_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-139
+PRJEB77094_29_S29_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-139
+PRJEB77094_2_S2_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-65
+PRJEB77094_30_S30_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-139
+PRJEB77094_31_S31_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-147
+PRJEB77094_32_S32_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-147
+PRJEB77094_33_S33_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-147
+PRJEB77094_34_S34_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-158
+PRJEB77094_35_S35_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-158
+PRJEB77094_36_S36_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-158
+PRJEB77094_37_S37_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-191
+PRJEB77094_38_S38_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-191
+PRJEB77094_39_S39_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-191
+PRJEB77094_3_S3_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-65
+PRJEB77094_40_S40_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-197
+PRJEB77094_41_S41_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-197
+PRJEB77094_42_S42_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-197
+PRJEB77094_43_S43_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-581
+PRJEB77094_44_S44_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-581
+PRJEB77094_45_S45_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-581
+PRJEB77094_46_S46_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-587
+PRJEB77094_47_S47_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-587
+PRJEB77094_48_S48_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-587
+PRJEB77094_49_S49_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-603
+PRJEB77094_4_S4_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-78
+PRJEB77094_50_S50_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-603
+PRJEB77094_51_S51_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-603
+PRJEB77094_52_S52_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-157
+PRJEB77094_53_S53_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-157
+PRJEB77094_54_S54_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-157
+PRJEB77094_55_S55_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-161
+PRJEB77094_56_S56_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-161
+PRJEB77094_57_S57_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-96
+PRJEB77094_58_S58_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-96
+PRJEB77094_59_S59_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-96
+PRJEB77094_5_S5_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-78
+PRJEB77094_60_S60_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-152
+PRJEB77094_61_S61_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-152
+PRJEB77094_62_S62_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-152
+PRJEB77094_63_S63_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-170
+PRJEB77094_64_S64_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-170
+PRJEB77094_65_S65_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-170
+PRJEB77094_66_S66_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-199
+PRJEB77094_67_S67_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-199
+PRJEB77094_68_S68_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-199
+PRJEB77094_69_S69_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-201
+PRJEB77094_6_S6_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-78
+PRJEB77094_70_S70_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-201
+PRJEB77094_71_S71_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-201
+PRJEB77094_72_S72_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-217
+PRJEB77094_73_S73_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-217
+PRJEB77094_74_S74_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-217
+PRJEB77094_75_S75_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-577
+PRJEB77094_76_S76_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-577
+PRJEB77094_77_S77_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-577
+PRJEB77094_78_S78_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-596
+PRJEB77094_79_S79_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-596
+PRJEB77094_7_S7_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-117
+PRJEB77094_80_S80_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-596
+PRJEB77094_81_S81_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-115
+PRJEB77094_82_S82_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-115
+PRJEB77094_83_S83_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-115
+PRJEB77094_84_S84_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-178
+PRJEB77094_85_S85_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-178
+PRJEB77094_8_S8_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-117
+PRJEB77094_9_S9_L001,PRJEB77094,RABOLA,hindgut,cow,https://www.ebi.ac.uk/ena,PRJEB77094-117
+ERX12708894,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-65
+ERX12708895,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-158
+ERX12708896,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-99
+ERX12708897,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-78
+ERX12708898,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-147
+ERX12708899,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-157
+ERX12708900,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-161
+ERX12708901,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-157
+ERX12708902,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-115
+ERX12708903,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-117
+ERX12708904,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-99
+ERX12708905,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-152
+ERX12708906,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-139
+ERX12708907,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-199
+ERX12708908,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-199
+ERX12708909,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-161
+ERX12708910,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-202
+ERX12708911,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-139
+ERX12708912,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-183
+ERX12708913,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-95
+ERX12708914,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-202
+ERX12708915,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-575
+ERX12708916,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-115
+ERX12708917,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-95
+ERX12708918,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-193
+ERX12708919,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-217
+ERX12708920,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-587
+ERX12708921,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-577
+ERX12708922,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-117
+ERX12708923,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-587
+ERX12708924,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-575
+ERX12708925,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-152
+ERX12708926,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-191
+ERX12708927,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-178
+ERX12708928,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-170
+ERX12708929,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-596
+ERX12708930,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-603
+ERX12708931,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-201
+ERX12708932,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-581
+ERX12708933,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-96
+ERX12708934,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-193
+ERX12708935,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-577
+ERX12708936,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-178
+ERX12708937,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-78
+ERX12708938,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-192
+ERX12708939,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-217
+ERX12708940,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-197
+ERX12708941,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-192
+ERX12708942,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-170
+ERX12708943,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-581
+ERX12708944,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-603
+ERX12708945,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-197
+ERX12708946,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-596
+ERX12708947,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-201
+ERX12708948,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-183
+ERX12708949,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-96
+ERX12708950,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-65
+ERX12708951,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-147
+ERX12708952,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-191
+ERX12708953,PRJEB77087,RABOLA,rumen,cow,https://www.ebi.ac.uk/ena,PRJEB77087-158
+ERX12708639,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-575
+ERX12708640,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-575
+ERX12708641,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-575
+ERX12708642,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-575
+ERX12708643,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-95
+ERX12708644,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-95
+ERX12708645,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-95
+ERX12708646,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-95
+ERX12708647,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-157
+ERX12708648,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-157
+ERX12708649,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-157
+ERX12708650,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-157
+ERX12708651,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-183
+ERX12708652,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-183
+ERX12708653,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-183
+ERX12708654,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-139
+ERX12708655,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-139
+ERX12708656,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-139
+ERX12708657,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-139
+ERX12708658,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-117
+ERX12708659,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-65
+ERX12708660,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-117
+ERX12708661,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-117
+ERX12708662,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-117
+ERX12708663,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-99
+ERX12708664,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-99
+ERX12708665,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-99
+ERX12708666,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-99
+ERX12708667,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-65
+ERX12708668,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-65
+ERX12708669,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-199
+ERX12708670,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-199
+ERX12708671,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-199
+ERX12708672,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-199
+ERX12708673,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-65
+ERX12708674,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-65
+ERX12708675,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-65
+ERX12708676,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-65
+ERX12708677,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-65
+ERX12708678,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-99
+ERX12708679,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-152
+ERX12708680,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-152
+ERX12708681,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-152
+ERX12708682,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-152
+ERX12708683,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-158
+ERX12708684,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-158
+ERX12708685,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-158
+ERX12708686,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-158
+ERX12708687,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-161
+ERX12708688,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-161
+ERX12708689,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-161
+ERX12708690,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-161
+ERX12708691,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-158
+ERX12708692,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-158
+ERX12708693,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-587
+ERX12708694,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-587
+ERX12708695,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-587
+ERX12708696,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-158
+ERX12708697,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-587
+ERX12708698,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-158
+ERX12708699,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-115
+ERX12708700,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-115
+ERX12708701,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-115
+ERX12708702,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-115
+ERX12708703,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-99
+ERX12708704,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-193
+ERX12708705,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-193
+ERX12708706,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-193
+ERX12708707,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-193
+ERX12708708,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-217
+ERX12708709,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-217
+ERX12708710,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-217
+ERX12708711,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-217
+ERX12708712,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-147
+ERX12708713,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-147
+ERX12708714,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-147
+ERX12708715,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-147
+ERX12708716,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-191
+ERX12708717,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-191
+ERX12708718,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-191
+ERX12708719,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-577
+ERX12708720,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-577
+ERX12708721,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-577
+ERX12708722,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-577
+ERX12708723,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-78
+ERX12708724,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-78
+ERX12708725,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-78
+ERX12708726,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-78
+ERX12708727,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-99
+ERX12708728,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-170
+ERX12708729,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-170
+ERX12708730,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-170
+ERX12708731,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-170
+ERX12708732,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-157
+ERX12708733,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-157
+ERX12708734,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-157
+ERX12708735,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-157
+ERX12708736,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-183
+ERX12708737,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-183
+ERX12708738,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-183
+ERX12708739,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-183
+ERX12708740,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-581
+ERX12708741,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-581
+ERX12708742,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-581
+ERX12708743,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-95
+ERX12708744,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-95
+ERX12708745,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-95
+ERX12708746,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-95
+ERX12708747,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-117
+ERX12708748,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-117
+ERX12708749,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-117
+ERX12708750,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-117
+ERX12708751,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-178
+ERX12708752,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-178
+ERX12708753,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-178
+ERX12708754,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-178
+ERX12708755,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-192
+ERX12708756,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-192
+ERX12708757,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-192
+ERX12708758,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-192
+ERX12708759,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-575
+ERX12708760,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-575
+ERX12708761,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-575
+ERX12708762,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-575
+ERX12708763,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-139
+ERX12708764,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-139
+ERX12708765,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-139
+ERX12708766,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-139
+ERX12708767,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-99
+ERX12708768,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-201
+ERX12708769,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-201
+ERX12708770,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-201
+ERX12708771,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-201
+ERX12708772,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-596
+ERX12708773,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-596
+ERX12708774,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-596
+ERX12708775,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-596
+ERX12708776,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-152
+ERX12708777,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-152
+ERX12708778,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-152
+ERX12708779,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-152
+ERX12708780,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-199
+ERX12708781,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-199
+ERX12708782,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-191
+ERX12708783,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-199
+ERX12708784,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-199
+ERX12708785,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-161
+ERX12708786,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-161
+ERX12708787,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-161
+ERX12708788,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-161
+ERX12708789,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-197
+ERX12708790,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-197
+ERX12708791,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-197
+ERX12708792,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-197
+ERX12708793,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-191
+ERX12708794,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-202
+ERX12708795,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-202
+ERX12708796,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-202
+ERX12708797,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-202
+ERX12708798,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-191
+ERX12708799,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-191
+ERX12708800,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-587
+ERX12708801,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-587
+ERX12708802,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-587
+ERX12708803,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-587
+ERX12708804,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-115
+ERX12708805,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-115
+ERX12708806,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-115
+ERX12708807,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-115
+ERX12708808,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-217
+ERX12708809,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-217
+ERX12708810,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-217
+ERX12708811,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-217
+ERX12708812,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-193
+ERX12708813,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-193
+ERX12708814,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-193
+ERX12708815,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-193
+ERX12708816,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-577
+ERX12708817,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-577
+ERX12708818,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-577
+ERX12708819,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-577
+ERX12708820,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-603
+ERX12708821,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-603
+ERX12708822,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-603
+ERX12708823,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-603
+ERX12708824,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-96
+ERX12708825,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-96
+ERX12708826,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-96
+ERX12708827,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-96
+ERX12708828,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-170
+ERX12708829,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-170
+ERX12708830,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-170
+ERX12708831,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-581
+ERX12708832,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-581
+ERX12708833,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-581
+ERX12708834,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-192
+ERX12708835,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-192
+ERX12708836,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-192
+ERX12708837,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-192
+ERX12708838,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-201
+ERX12708839,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-201
+ERX12708840,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-201
+ERX12708841,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-201
+ERX12708842,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-197
+ERX12708843,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-197
+ERX12708844,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-197
+ERX12708845,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-197
+ERX12708846,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-596
+ERX12708847,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-596
+ERX12708848,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-596
+ERX12708849,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-596
+ERX12708850,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-78
+ERX12708851,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-78
+ERX12708852,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-78
+ERX12708853,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-78
+ERX12708854,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-147
+ERX12708855,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-147
+ERX12708856,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-147
+ERX12708857,PRJEB72623,RABOLA,milk,food,https://www.ebi.ac.uk/ena,PRJEB72623-147
+SRX24751592,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1043
+SRX24751593,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1071
+SRX24751594,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-850
+SRX24751595,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-771
+SRX24751596,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-833
+SRX24751597,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-833
+SRX24751598,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-850
+SRX24751599,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-763
+SRX24751600,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-850
+SRX24751601,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-902
+SRX24751602,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-902
+SRX24751603,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-917
+SRX24751604,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-917
+SRX24751605,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1123
+SRX24751606,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-925
+SRX24751607,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-925
+SRX24751608,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-929
+SRX24751609,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-929
+SRX24751610,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1043
+SRX24751611,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-850
+SRX24751612,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1145
+SRX24751613,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1145
+SRX24751614,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1171
+SRX24751615,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1171
+SRX24751616,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1071
+SRX24751617,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1177
+SRX24751618,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-902
+SRX24751619,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1177
+SRX24751620,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-76
+SRX24751621,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-76
+SRX24751622,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-763
+SRX24751623,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-763
+SRX24751624,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-771
+SRX24751625,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-771
+SRX24751626,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1043
+SRX24751627,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1071
+SRX24751628,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1071
+SRX24751629,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1087
+SRX24751630,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1087
+SRX24751631,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1097
+SRX24751632,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1097
+SRX24751633,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1113
+SRX24751634,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1113
+SRX24751635,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1113
+SRX24751636,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1123
+SRX24751637,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-76
+SRX24751638,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1123
+SRX24751639,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1129
+SRX24751640,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1129
+SRX24751641,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1137
+SRX24751642,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1043
+SRX24751643,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-771
+SRX24751644,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1043
+SRX24751645,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1071
+SRX24751646,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1071
+SRX24751647,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1087
+SRX24751648,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1129
+SRX24751649,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1087
+SRX24751650,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1097
+SRX24751651,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1097
+SRX24751652,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1113
+SRX24751653,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1113
+SRX24751654,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1123
+SRX24751655,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-771
+SRX24751656,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1123
+SRX24751657,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1129
+SRX24751658,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-833
+SRX24751659,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1087
+SRX24751660,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-833
+SRX24751661,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-850
+SRX24751662,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-902
+SRX24751663,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-850
+SRX24751664,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-902
+SRX24751665,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-902
+SRX24751666,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-917
+SRX24751667,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-917
+SRX24751668,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-925
+SRX24751669,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-925
+SRX24751670,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1087
+SRX24751671,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-929
+SRX24751672,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-929
+SRX24751673,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1043
+SRX24751674,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1137
+SRX24751675,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1145
+SRX24751676,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1145
+SRX24751677,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1123
+SRX24751678,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1171
+SRX24751679,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1171
+SRX24751680,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1177
+SRX24751681,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-763
+SRX24751682,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1177
+SRX24751683,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-76
+SRX24751684,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-76
+SRX24751685,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-763
+SRX24751686,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-763
+SRX24751687,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-771
+SRX24751688,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1129
+SRX24751689,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1129
+SRX24751690,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1137
+SRX24751691,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1137
+SRX24751692,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1145
+SRX24751693,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1145
+SRX24751694,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1171
+SRX24751695,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1171
+SRX24751696,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1177
+SRX24751697,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-833
+SRX24751698,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1177
+SRX24751699,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-76
+SRX24751700,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1137
+SRX24751701,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-76
+SRX24751702,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-763
+SRX24751703,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-763
+SRX24751704,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-917
+SRX24751705,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1043
+SRX24751706,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1071
+SRX24751707,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1071
+SRX24751708,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1087
+SRX24751709,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1087
+SRX24751710,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1097
+SRX24751711,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1097
+SRX24751712,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1097
+SRX24751713,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1113
+SRX24751714,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1113
+SRX24751715,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1123
+SRX24751716,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-917
+SRX24751717,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1123
+SRX24751718,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1129
+SRX24751719,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1129
+SRX24751720,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-771
+SRX24751721,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-771
+SRX24751722,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-833
+SRX24751723,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-833
+SRX24751724,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-850
+SRX24751725,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-833
+SRX24751726,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-850
+SRX24751727,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1137
+SRX24751728,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-902
+SRX24751729,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-902
+SRX24751730,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-917
+SRX24751731,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-917
+SRX24751732,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-925
+SRX24751733,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-925
+SRX24751734,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-929
+SRX24751735,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-929
+SRX24751736,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1137
+SRX24751737,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1137
+SRX24751738,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1097
+SRX24751739,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1145
+SRX24751740,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1145
+SRX24751741,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1171
+SRX24751742,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1171
+SRX24751743,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1177
+SRX24751744,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-925
+SRX24751745,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1177
+SRX24751746,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-925
+SRX24751747,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-929
+SRX24751748,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-929
+SRX24751749,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1113
+SRX24751750,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-1043
+SRX24751751,PRJNA1103402,RABOLA,milk,food,https://www.ncbi.nlm.nih.gov/sra/,PRJNA1103402-76
+SRX21335300,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4333
+SRX21335301,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4334
+SRX21335302,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4329
+SRX21335303,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7858
+SRX21335304,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4334
+SRX21335305,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4336
+SRX21335306,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7854
+SRX21335307,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4326
+SRX21335308,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4328
+SRX21335309,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7858
+SRX21335310,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4326
+SRX21335311,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4328
+SRX21335312,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4336
+SRX21335313,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4329
+SRX21335314,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4326
+SRX21335315,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4328
+SRX21335316,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4329
+SRX21335317,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7858
+SRX21335318,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4333
+SRX21335319,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4334
+SRX21335320,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4336
+SRX21335321,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7854
+SRX21335323,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7854
+SRX21335334,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4336
+SRX21335345,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7854
+SRX21335353,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4333
+SRX21335354,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4334
+SRX21335355,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4326
+SRX21335356,PRJNA1003434,Grant-201801062101,feces,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4328
+SRX21335322,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4333
+SRX21335324,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4334
+SRX21335325,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4336
+SRX21335326,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7854
+SRX21335327,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4336
+SRX21335328,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7854
+SRX21335329,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4333
+SRX21335330,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4334
+SRX21335331,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4326
+SRX21335332,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4328
+SRX21335333,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4329
+SRX21335335,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7858
+SRX21335336,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4334
+SRX21335337,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4336
+SRX21335338,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7854
+SRX21335339,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4326
+SRX21335340,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4328
+SRX21335341,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7858
+SRX21335342,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4326
+SRX21335343,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4328
+SRX21335344,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4329
+SRX21335346,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4326
+SRX21335347,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4328
+SRX21335348,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4329
+SRX21335349,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7858
+SRX21335350,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4334
+SRX21335351,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-4336
+SRX21335352,PRJNA1003434,Grant-201801062101,rumen,goat,https://www.ebi.ac.uk/ena/browser/view/PRJNA1003434,PRJNA1003434-7854
+KYFH4_sample_1,"",MORGOAT,milk,goat,"",KYFH4-IT098009104459
+KYFH4_sample_10,"",MORGOAT,milk,goat,"",KYFH4-IT098009104433
+KYFH4_sample_100,"",MORGOAT,milk,goat,"",KYFH4-IT098009105029
+KYFH4_sample_101,"",MORGOAT,milk,goat,"",KYFH4-IT098009105020
+KYFH4_sample_102,"",MORGOAT,milk,goat,"",KYFH4-IT098009104486
+KYFH4_sample_103,"",MORGOAT,milk,goat,"",KYFH4-IT098009105059
+KYFH4_sample_104,"",MORGOAT,milk,goat,"",KYFH4-IT098009104421
+KYFH4_sample_105,"",MORGOAT,milk,goat,"",KYFH4-IT098009104464
+KYFH4_sample_106,"",MORGOAT,milk,goat,"",KYFH4-IT098009104419
+KYFH4_sample_107,"",MORGOAT,milk,goat,"",KYFH4-IT098009104463
+KYFH4_sample_108,"",MORGOAT,milk,goat,"",KYFH4-
+KYFH4_sample_109,"",MORGOAT,milk,goat,"",KYFH4-IT098009105045
+KYFH4_sample_11,"",MORGOAT,milk,goat,"",KYFH4-IT098009104454
+KYFH4_sample_110,"",MORGOAT,milk,goat,"",KYFH4-IT098009104459
+KYFH4_sample_111,"",MORGOAT,milk,goat,"",KYFH4-IT098009104754
+KYFH4_sample_112,"",MORGOAT,milk,goat,"",KYFH4-IT098009104460
+KYFH4_sample_113,"",MORGOAT,milk,goat,"",KYFH4-IT098009104454
+KYFH4_sample_114,"",MORGOAT,milk,goat,"",KYFH4-IT098009105026
+KYFH4_sample_115,"",MORGOAT,milk,goat,"",KYFH4-IT098009105034
+KYFH4_sample_116,"",MORGOAT,milk,goat,"",KYFH4-IT098009104413
+KYFH4_sample_117,"",MORGOAT,milk,goat,"",KYFH4-IT098009105015
+KYFH4_sample_118,"",MORGOAT,milk,goat,"",KYFH4-IT098009104759
+KYFH4_sample_119,"",MORGOAT,milk,goat,"",KYFH4-IT098009104420
+KYFH4_sample_12,"",MORGOAT,milk,goat,"",KYFH4-IT098009104421
+KYFH4_sample_120,"",MORGOAT,milk,goat,"",KYFH4-IT098009104763
+KYFH4_sample_121,"",MORGOAT,milk,goat,"",KYFH4-IT098009105059
+KYFH4_sample_123,"",MORGOAT,milk,goat,"",KYFH4-IT098009105073
+KYFH4_sample_124,"",MORGOAT,milk,goat,"",KYFH4-IT098009105070
+KYFH4_sample_125,"",MORGOAT,milk,goat,"",KYFH4-IT098009105008
+KYFH4_sample_126,"",MORGOAT,milk,goat,"",KYFH4-IT098009104994
+KYFH4_sample_127,"",MORGOAT,milk,goat,"",KYFH4-IT098009105028
+KYFH4_sample_128,"",MORGOAT,milk,goat,"",KYFH4-IT098009105074
+KYFH4_sample_129,"",MORGOAT,milk,goat,"",KYFH4-IT098009105078
+KYFH4_sample_13,"",MORGOAT,milk,goat,"",KYFH4-IT098009104477
+KYFH4_sample_130,"",MORGOAT,milk,goat,"",KYFH4-IT098009104438
+KYFH4_sample_131,"",MORGOAT,milk,goat,"",KYFH4-IT098009104997
+KYFH4_sample_132,"",MORGOAT,milk,goat,"",KYFH4-IT098009104782
+KYFH4_sample_133,"",MORGOAT,milk,goat,"",KYFH4-
+KYFH4_sample_134,"",MORGOAT,milk,goat,"",KYFH4-IT098009105076
+KYFH4_sample_135,"",MORGOAT,milk,goat,"",KYFH4-IT098009104412
+KYFH4_sample_136,"",MORGOAT,milk,goat,"",KYFH4-IT098009104472
+KYFH4_sample_137,"",MORGOAT,milk,goat,"",KYFH4-IT098009104758
+KYFH4_sample_138,"",MORGOAT,milk,goat,"",KYFH4-IT098009104424
+KYFH4_sample_139,"",MORGOAT,milk,goat,"",KYFH4-IT098009105075
+KYFH4_sample_14,"",MORGOAT,milk,goat,"",KYFH4-IT098009104487
+KYFH4_sample_140,"",MORGOAT,milk,goat,"",KYFH4-IT098009104776
+KYFH4_sample_141,"",MORGOAT,milk,goat,"",KYFH4-IT098009104483
+KYFH4_sample_142,"",MORGOAT,milk,goat,"",KYFH4-IT098009104468
+KYFH4_sample_143,"",MORGOAT,milk,goat,"",KYFH4-IT098009104447
+KYFH4_sample_144,"",MORGOAT,milk,goat,"",KYFH4-IT098009104487
+KYFH4_sample_145,"",MORGOAT,milk,goat,"",KYFH4-IT098009104477
+KYFH4_sample_146,"",MORGOAT,milk,goat,"",KYFH4-IT098009104446
+KYFH4_sample_147,"",MORGOAT,milk,goat,"",KYFH4-IT098009105068
+KYFH4_sample_148,"",MORGOAT,milk,goat,"",KYFH4-IT098009105040
+KYFH4_sample_149,"",MORGOAT,milk,goat,"",KYFH4-IT098009105025
+KYFH4_sample_15,"",MORGOAT,milk,goat,"",KYFH4-IT098009104460
+KYFH4_sample_150,"",MORGOAT,milk,goat,"",KYFH4-IT098009105029
+KYFH4_sample_151,"",MORGOAT,milk,goat,"",KYFH4-IT098009104756
+KYFH4_sample_152,"",MORGOAT,milk,goat,"",KYFH4-IT098009104464
+KYFH4_sample_153,"",MORGOAT,milk,goat,"",KYFH4-IT098009104757
+KYFH4_sample_154,"",MORGOAT,milk,goat,"",KYFH4-IT098009105046
+KYFH4_sample_155,"",MORGOAT,milk,goat,"",KYFH4-IT098009105007
+KYFH4_sample_156,"",MORGOAT,milk,goat,"",KYFH4-IT098009104419
+KYFH4_sample_157,"",MORGOAT,milk,goat,"",KYFH4-IT098009104460
+KYFH4_sample_158,"",MORGOAT,milk,goat,"",KYFH4-IT098009104988
+KYFH4_sample_159,"",MORGOAT,milk,goat,"",KYFH4-IT098009105059
+KYFH4_sample_16,"",MORGOAT,milk,goat,"",KYFH4-IT098009104483
+KYFH4_sample_160,"",MORGOAT,milk,goat,"",KYFH4-IT098009104416
+KYFH4_sample_17,"",MORGOAT,milk,goat,"",KYFH4-IT098009104486
+KYFH4_sample_18,"",MORGOAT,milk,goat,"",KYFH4-IT098009104446
+KYFH4_sample_19,"",MORGOAT,milk,goat,"",KYFH4-IT098009104438
+KYFH4_sample_2,"",MORGOAT,milk,goat,"",KYFH4-IT098009104412
+KYFH4_sample_20,"",MORGOAT,milk,goat,"",KYFH4-IT098009104419
+KYFH4_sample_21,"",MORGOAT,milk,goat,"",KYFH4-IT098009104420
+KYFH4_sample_22,"",MORGOAT,milk,goat,"",KYFH4-IT098009104468
+KYFH4_sample_23,"",MORGOAT,milk,goat,"",KYFH4-IT098009104472
+KYFH4_sample_24,"",MORGOAT,milk,goat,"",KYFH4-IT098009105045
+KYFH4_sample_27,"",MORGOAT,milk,goat,"",KYFH4-IT098009105020
+KYFH4_sample_28,"",MORGOAT,milk,goat,"",KYFH4-IT098009105059
+KYFH4_sample_3,"",MORGOAT,milk,goat,"",KYFH4-IT098009104463
+KYFH4_sample_30,"",MORGOAT,milk,goat,"",KYFH4-IT098009104759
+KYFH4_sample_31,"",MORGOAT,milk,goat,"",KYFH4-IT098009105068
+KYFH4_sample_32,"",MORGOAT,milk,goat,"",KYFH4-IT098009105074
+KYFH4_sample_33,"",MORGOAT,milk,goat,"",KYFH4-IT098009105076
+KYFH4_sample_34,"",MORGOAT,milk,goat,"",KYFH4-IT098009105025
+KYFH4_sample_35,"",MORGOAT,milk,goat,"",KYFH4-IT098009105070
+KYFH4_sample_36,"",MORGOAT,milk,goat,"",KYFH4-IT098009104757
+KYFH4_sample_37,"",MORGOAT,milk,goat,"",KYFH4-IT098009105026
+KYFH4_sample_38,"",MORGOAT,milk,goat,"",KYFH4-IT098009104756
+KYFH4_sample_39,"",MORGOAT,milk,goat,"",KYFH4-IT098009105046
+KYFH4_sample_4,"",MORGOAT,milk,goat,"",KYFH4-IT098009104424
+KYFH4_sample_40,"",MORGOAT,milk,goat,"",KYFH4-IT098009104782
+KYFH4_sample_41,"",MORGOAT,milk,goat,"",KYFH4-IT098009105073
+KYFH4_sample_42,"",MORGOAT,milk,goat,"",KYFH4-IT098009104997
+KYFH4_sample_43,"",MORGOAT,milk,goat,"",KYFH4-IT098009105034
+KYFH4_sample_44,"",MORGOAT,milk,goat,"",KYFH4-IT098009105029
+KYFH4_sample_45,"",MORGOAT,milk,goat,"",KYFH4-IT098009104754
+KYFH4_sample_46,"",MORGOAT,milk,goat,"",KYFH4-IT098009104776
+KYFH4_sample_47,"",MORGOAT,milk,goat,"",KYFH4-IT098009105028
+KYFH4_sample_48,"",MORGOAT,milk,goat,"",KYFH4-IT098009105040
+KYFH4_sample_49,"",MORGOAT,milk,goat,"",KYFH4-IT098009105078
+KYFH4_sample_5,"",MORGOAT,milk,goat,"",KYFH4-IT098009104447
+KYFH4_sample_50,"",MORGOAT,milk,goat,"",KYFH4-IT098009104763
+KYFH4_sample_51,"",MORGOAT,milk,goat,"",KYFH4-IT098009105007
+KYFH4_sample_52,"",MORGOAT,milk,goat,"",KYFH4-IT098009105008
+KYFH4_sample_53,"",MORGOAT,milk,goat,"",KYFH4-IT098009104994
+KYFH4_sample_54,"",MORGOAT,milk,goat,"",KYFH4-IT098009105015
+KYFH4_sample_55,"",MORGOAT,milk,goat,"",KYFH4-IT098009105075
+KYFH4_sample_56,"",MORGOAT,milk,goat,"",KYFH4-IT098009105013
+KYFH4_sample_57,"",MORGOAT,milk,goat,"",KYFH4-IT098009105073
+KYFH4_sample_58,"",MORGOAT,milk,goat,"",KYFH4-IT098009105076
+KYFH4_sample_59,"",MORGOAT,milk,goat,"",KYFH4-IT098009105070
+KYFH4_sample_6,"",MORGOAT,milk,goat,"",KYFH4-
+KYFH4_sample_60,"",MORGOAT,milk,goat,"",KYFH4-IT098009104997
+KYFH4_sample_61,"",MORGOAT,milk,goat,"",KYFH4-IT098009105013
+KYFH4_sample_62,"",MORGOAT,milk,goat,"",KYFH4-IT098009105034
+KYFH4_sample_63,"",MORGOAT,milk,goat,"",KYFH4-IT098009105059
+KYFH4_sample_64,"",MORGOAT,milk,goat,"",KYFH4-IT098009105008
+KYFH4_sample_65,"",MORGOAT,milk,goat,"",KYFH4-IT098009104776
+KYFH4_sample_66,"",MORGOAT,milk,goat,"",KYFH4-IT098009104782
+KYFH4_sample_67,"",MORGOAT,milk,goat,"",KYFH4-IT098009104758
+KYFH4_sample_68,"",MORGOAT,milk,goat,"",KYFH4-IT098009104994
+KYFH4_sample_69,"",MORGOAT,milk,goat,"",KYFH4-IT098009104763
+KYFH4_sample_7,"",MORGOAT,milk,goat,"",KYFH4-IT098009104464
+KYFH4_sample_70,"",MORGOAT,milk,goat,"",KYFH4-IT098009104413
+KYFH4_sample_71,"",MORGOAT,milk,goat,"",KYFH4-IT098009104472
+KYFH4_sample_72,"",MORGOAT,milk,goat,"",KYFH4-IT098009104412
+KYFH4_sample_73,"",MORGOAT,milk,goat,"",KYFH4-IT098009104420
+KYFH4_sample_74,"",MORGOAT,milk,goat,"",KYFH4-IT098009105074
+KYFH4_sample_75,"",MORGOAT,milk,goat,"",KYFH4-IT098009105015
+KYFH4_sample_76,"",MORGOAT,milk,goat,"",KYFH4-IT098009104759
+KYFH4_sample_77,"",MORGOAT,milk,goat,"",KYFH4-IT098009104447
+KYFH4_sample_78,"",MORGOAT,milk,goat,"",KYFH4-IT098009104477
+KYFH4_sample_79,"",MORGOAT,milk,goat,"",KYFH4-IT098009104454
+KYFH4_sample_8,"",MORGOAT,milk,goat,"",KYFH4-IT098009104413
+KYFH4_sample_80,"",MORGOAT,milk,goat,"",KYFH4-IT098009104487
+KYFH4_sample_81,"",MORGOAT,milk,goat,"",KYFH4-IT098009105075
+KYFH4_sample_82,"",MORGOAT,milk,goat,"",KYFH4-IT098009105046
+KYFH4_sample_83,"",MORGOAT,milk,goat,"",KYFH4-IT098009105028
+KYFH4_sample_84,"",MORGOAT,milk,goat,"",KYFH4-IT098009104988
+KYFH4_sample_85,"",MORGOAT,milk,goat,"",KYFH4-IT098009104483
+KYFH4_sample_86,"",MORGOAT,milk,goat,"",KYFH4-IT098009104468
+KYFH4_sample_87,"",MORGOAT,milk,goat,"",KYFH4-IT098009104416
+KYFH4_sample_88,"",MORGOAT,milk,goat,"",KYFH4-IT098009104438
+KYFH4_sample_89,"",MORGOAT,milk,goat,"",KYFH4-IT098009104424
+KYFH4_sample_9,"",MORGOAT,milk,goat,"",KYFH4-IT098009104416
+KYFH4_sample_90,"",MORGOAT,milk,goat,"",KYFH4-IT098009104446
+KYFH4_sample_91,"",MORGOAT,milk,goat,"",KYFH4-IT098009104433
+KYFH4_sample_92,"",MORGOAT,milk,goat,"",KYFH4-IT098009105040
+KYFH4_sample_93,"",MORGOAT,milk,goat,"",KYFH4-IT098009104756
+KYFH4_sample_94,"",MORGOAT,milk,goat,"",KYFH4-IT098009105007
+KYFH4_sample_95,"",MORGOAT,milk,goat,"",KYFH4-IT098009105025
+KYFH4_sample_96,"",MORGOAT,milk,goat,"",KYFH4-IT098009105068
+KYFH4_sample_97,"",MORGOAT,milk,goat,"",KYFH4-IT098009105078
+KYFH4_sample_98,"",MORGOAT,milk,goat,"",KYFH4-IT098009104757
+KYFH4_sample_99,"",MORGOAT,milk,goat,"",KYFH4-IT098009105026
+KR9NH_sample_1,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-1
+KR9NH_sample_10,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-19
+KR9NH_sample_100,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-13
+KR9NH_sample_11,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-4
+KR9NH_sample_12,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-6
+KR9NH_sample_13,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-7
+KR9NH_sample_14,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-11
+KR9NH_sample_15,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-12
+KR9NH_sample_16,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-13
+KR9NH_sample_17,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-15
+KR9NH_sample_18,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-16
+KR9NH_sample_19,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-18
+KR9NH_sample_2,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-2
+KR9NH_sample_20,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-20
+KR9NH_sample_21,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-1
+KR9NH_sample_22,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-2
+KR9NH_sample_23,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-3
+KR9NH_sample_24,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-5
+KR9NH_sample_25,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-8
+KR9NH_sample_26,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-9
+KR9NH_sample_27,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-10
+KR9NH_sample_28,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-14
+KR9NH_sample_29,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-17
+KR9NH_sample_3,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-3
+KR9NH_sample_30,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-19
+KR9NH_sample_31,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-4
+KR9NH_sample_32,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-6
+KR9NH_sample_33,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-7
+KR9NH_sample_34,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-11
+KR9NH_sample_35,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-12
+KR9NH_sample_36,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-13
+KR9NH_sample_37,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-15
+KR9NH_sample_38,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-16
+KR9NH_sample_39,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-18
+KR9NH_sample_4,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-5
+KR9NH_sample_40,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-20
+KR9NH_sample_41,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-1
+KR9NH_sample_42,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-2
+KR9NH_sample_43,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-3
+KR9NH_sample_44,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-5
+KR9NH_sample_45,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-8
+KR9NH_sample_46,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-9
+KR9NH_sample_47,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-10
+KR9NH_sample_48,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-14
+KR9NH_sample_49,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-17
+KR9NH_sample_5,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-8
+KR9NH_sample_50,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-19
+KR9NH_sample_51,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-4
+KR9NH_sample_52,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-6
+KR9NH_sample_53,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-7
+KR9NH_sample_54,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-11
+KR9NH_sample_55,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-13
+KR9NH_sample_56,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-15
+KR9NH_sample_57,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-18
+KR9NH_sample_58,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-20
+KR9NH_sample_59,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-2
+KR9NH_sample_6,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-9
+KR9NH_sample_60,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-3
+KR9NH_sample_61,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-5
+KR9NH_sample_62,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-6
+KR9NH_sample_63,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-9
+KR9NH_sample_64,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-12
+KR9NH_sample_65,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-14
+KR9NH_sample_66,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-1
+KR9NH_sample_67,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-4
+KR9NH_sample_68,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-7
+KR9NH_sample_69,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-8
+KR9NH_sample_7,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-10
+KR9NH_sample_70,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-10
+KR9NH_sample_71,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-11
+KR9NH_sample_72,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-13
+KR9NH_sample_73,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-2
+KR9NH_sample_74,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-3
+KR9NH_sample_75,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-5
+KR9NH_sample_76,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-6
+KR9NH_sample_77,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-9
+KR9NH_sample_78,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-12
+KR9NH_sample_79,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-14
+KR9NH_sample_8,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-14
+KR9NH_sample_80,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-1
+KR9NH_sample_81,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-4
+KR9NH_sample_82,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-7
+KR9NH_sample_83,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-8
+KR9NH_sample_84,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-10
+KR9NH_sample_85,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-11
+KR9NH_sample_86,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-13
+KR9NH_sample_87,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-2
+KR9NH_sample_88,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-3
+KR9NH_sample_89,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-5
+KR9NH_sample_9,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-17
+KR9NH_sample_90,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-6
+KR9NH_sample_91,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-9
+KR9NH_sample_92,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-12
+KR9NH_sample_93,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-14
+KR9NH_sample_94,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-1
+KR9NH_sample_95,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-4
+KR9NH_sample_96,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-7
+KR9NH_sample_97,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-8
+KR9NH_sample_98,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-10
+KR9NH_sample_99,17046019,LEGUPLUS,gut,pig,https://zenodo.org/records/17046019,KR9NH-11
