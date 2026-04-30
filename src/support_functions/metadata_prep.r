@@ -158,7 +158,7 @@ rab_sub <- rab_sub |> inner_join(rab_map, by = "nid") |>
   mutate(`Project Name` = "RABOLA") |>
   select(c(nid, experiment_accession, study_accession, cow, `Project Name`)) |>
   rename(`Sample ID` = experiment_accession, sample_id = nid, subject_id = cow, `Project ID` = study_accession) |>
-  mutate(subject_id = as.character(subject_id))
+  mutate(subject_id = paste(`Project ID`, subject_id, sep="-"))
 
 rab_sub_rumen <- rab_sub
 
@@ -179,7 +179,7 @@ morgoat_map <- morgoat_map |>
   rename(`Sample ID` = sample_id, sample_id = sample, subject_id = goat_id, `Project ID` = repo) |>
   mutate(subject_id = as.character(subject_id), `Project Name` = "MORGOAT") |>
   select(-c(timepoint, udder_health, Antibiotic, treatment)) |>
-  mutate(sample_id = as.character(sample_id))
+  mutate(sample_id = as.character(sample_id), subject_id = paste(`Project ID`, subject_id, sep="-"))
 
 
 ################################################################################
@@ -197,7 +197,7 @@ leguplus_map <- leguplus_map |>
   rename(`Sample ID` = sample_id, sample_id = `sample-id`, subject_id = animal, `Project ID` = repo) |>
   mutate(subject_id = as.character(subject_id), `Project Name` = "LEGUPLUS") |>
   select(-c(timepoint, sex, box, treatment, experiment, group)) |>
-  mutate(sample_id = as.character(sample_id))
+  mutate(sample_id = as.character(sample_id), subject_id = paste(`Project ID`, subject_id, sep="-"))
 
 
 ################################################################################
@@ -210,6 +210,17 @@ metadata |> filter(`Project ID` == "PRJNA1103402", Tissue == "milk") |> nrow()
 sum(leguplus_map$`Sample ID` %in% metadata$`Sample ID`)
 
 
-bind_rows(rab_sub_160, rab_sub_219, casco_sub, farminn_map, rab_map_gut,
+subjects <- bind_rows(rab_sub_160, rab_sub_219, casco_sub, farminn_map, rab_map_gut,
           rab_sub_rumen, morgoat_map, leguplus_map) |>
-  nrow()
+  select(c(`Sample ID`, subject_id))
+
+metadata <- metadata |> left_join(subjects, by = "Sample ID")
+
+metadata |>
+  group_by(`Project Name`, Tissue) |>
+  summarise(n_subjects = length(unique(subject_id)))
+
+fname = "Metadata_IDs.csv"
+fwrite(x = metadata, file = file.path(prjfolder, metadata_folder, fname))
+
+print("DONE!")
