@@ -1,0 +1,157 @@
+sample,timepoint,udder_health,Antibiotic,treatment,goat_id
+1,T1,Healthy,Treated,4,IT098009104459
+2,T1,Infected,Not treated,1,IT098009104412
+3,T1,Infected,Not treated,1,IT098009104463
+4,T1,Healthy,Treated,4,IT098009104424
+5,T1,Infected,Treated,2,IT098009104447
+6,T1,,,,
+7,T1,Infected,Not treated,1,IT098009104464
+8,T1,Infected,Treated,2,IT098009104413
+9,T1,Infected,Treated,2,IT098009104416
+10,T1,Healthy,Not treated,3,IT098009104433
+11,T1,Healthy,Treated,4,IT098009104454
+12,T1,Infected,Treated,2,IT098009104421
+13,T1,Healthy,Not treated,3,IT098009104477
+14,T1,Infected,Not treated,1,IT098009104487
+15,T1,Infected,Not treated,1,IT098009104460
+16,T1,Infected,Treated,2,IT098009104483
+17,T1,Infected,Not treated,1,IT098009104486
+18,T1,Infected,Treated,2,IT098009104446
+19,T1,Infected,Not treated,1,IT098009104438
+20,T1,Healthy,Not treated,3,IT098009104419
+21,T1,Infected,Not treated,1,IT098009104420
+22,T1,Infected,Not treated,1,IT098009104468
+23,T1,Healthy,Not treated,3,IT098009104472
+24,T1,Healthy,Treated,4,IT098009105045
+27,T1,Healthy,Treated,4,IT098009105020
+28,T1,Healthy,Not treated,3,IT098009105059
+30,T1,Infected,Treated,2,IT098009104759
+31,T1,Infected,Treated,2,IT098009105068
+32,T1,Healthy,Not treated,3,IT098009105074
+33,T1,Healthy,Treated,4,IT098009105076
+34,T1,Infected,Not treated,1,IT098009105025
+35,T1,Healthy,Treated,4,IT098009105070
+36,T1,Healthy,Treated,4,IT098009104757
+37,T1,Healthy,Not treated,3,IT098009105026
+38,T1,Infected,Treated,2,IT098009104756
+39,T1,Healthy,Not treated,3,IT098009105046
+40,T1,Infected,Treated,2,IT098009104782
+41,T1,Healthy,Not treated,3,IT098009105073
+42,T1,Healthy,Not treated,3,IT098009104997
+43,T1,Healthy,Treated,4,IT098009105034
+44,T1,Healthy,Not treated,3,IT098009105029
+45,T1,Infected,Not treated,1,IT098009104754
+46,T1,Healthy,Not treated,3,IT098009104776
+47,T1,Healthy,Treated,4,IT098009105028
+48,T1,Healthy,Treated,4,IT098009105040
+49,T1,Infected,Not treated,1,IT098009105078
+50,T1,Healthy,Treated,4,IT098009104763
+51,T1,Healthy,Treated,4,IT098009105007
+52,T1,Infected,Treated,2,IT098009105008
+53,T1,Healthy,Treated,4,IT098009104994
+54,T1,Infected,Not treated,1,IT098009105015
+55,T1,Infected,Not treated,1,IT098009105075
+56,T1,Healthy,Treated,4,IT098009105013
+57,T3,Healthy,Not treated,3,IT098009105073
+58,T3,Healthy,Treated,4,IT098009105076
+59,T3,Healthy,Treated,4,IT098009105070
+60,T3,Healthy,Not treated,3,IT098009104997
+61,T3,Healthy,Treated,4,IT098009105013
+62,T3,Healthy,Treated,4,IT098009105034
+63,T3,Healthy,Not treated,3,IT098009105059
+64,T3,Infected,Treated,2,IT098009105008
+65,T3,Healthy,Not treated,3,IT098009104776
+66,T3,Infected,Treated,2,IT098009104782
+67,T3,Healthy,Not treated,3,IT098009104758
+68,T3,Healthy,Treated,4,IT098009104994
+69,T3,Healthy,Treated,4,IT098009104763
+70,T3,Infected,Treated,2,IT098009104413
+71,T3,Healthy,Not treated,3,IT098009104472
+72,T3,Infected,Not treated,1,IT098009104412
+73,T3,Infected,Not treated,1,IT098009104420
+74,T3,Healthy,Not treated,3,IT098009105074
+75,T3,Infected,Not treated,1,IT098009105015
+76,T3,Infected,Treated,2,IT098009104759
+77,T3,Infected,Treated,2,IT098009104447
+78,T3,Healthy,Not treated,3,IT098009104477
+79,T3,Healthy,Treated,4,IT098009104454
+80,T3,Infected,Not treated,1,IT098009104487
+81,T3,Infected,Not treated,1,IT098009105075
+82,T3,Healthy,Not treated,3,IT098009105046
+83,T3,Healthy,Treated,4,IT098009105028
+84,T3,Infected,Treated,2,IT098009104988
+85,T3,Infected,Treated,2,IT098009104483
+86,T3,Infected,Not treated,1,IT098009104468
+87,T3,Infected,Treated,2,IT098009104416
+88,T3,Infected,Not treated,1,IT098009104438
+89,T3,Healthy,Treated,4,IT098009104424
+90,T3,Infected,Treated,2,IT098009104446
+91,T3,Healthy,Not treated,3,IT098009104433
+92,T3,Healthy,Treated,4,IT098009105040
+93,T3,Infected,Treated,2,IT098009104756
+94,T3,Healthy,Treated,4,IT098009105007
+95,T3,Infected,Not treated,1,IT098009105025
+96,T3,Infected,Treated,2,IT098009105068
+97,T3,Infected,Not treated,1,IT098009105078
+98,T3,Healthy,Treated,4,IT098009104757
+99,T3,Healthy,Not treated,3,IT098009105026
+100,T3,Healthy,Not treated,3,IT098009105029
+101,T3,Healthy,Treated,4,IT098009105020
+102,T3,Infected,Not treated,1,IT098009104486
+103,T3,Healthy,Not treated,3,IT098009105059
+104,T3,Infected,Treated,2,IT098009104421
+105,T3,Infected,Not treated,1,IT098009104464
+106,T3,Healthy,Not treated,3,IT098009104419
+107,T3,Infected,Not treated,1,IT098009104463
+108,T3,,,,
+109,T3,Healthy,Treated,4,IT098009105045
+110,T3,Healthy,Treated,4,IT098009104459
+111,T3,Infected,Not treated,1,IT098009104754
+112,T3,Infected,Not treated,1,IT098009104460
+113,T2,Healthy,Treated,4,IT098009104454
+114,T2,Healthy,Not treated,3,IT098009105026
+115,T2,Healthy,Treated,4,IT098009105034
+116,T2,Infected,Treated,2,IT098009104413
+117,T2,Infected,Not treated,1,IT098009105015
+118,T2,Infected,Treated,2,IT098009104759
+119,T2,Infected,Not treated,1,IT098009104420
+120,T2,Healthy,Treated,4,IT098009104763
+121,T2,Healthy,Not treated,3,IT098009105059
+123,T2,Healthy,Not treated,3,IT098009105073
+124,T2,Healthy,Treated,4,IT098009105070
+125,T2,Infected,Treated,2,IT098009105008
+126,T2,Healthy,Treated,4,IT098009104994
+127,T2,Healthy,Treated,4,IT098009105028
+128,T2,Healthy,Not treated,3,IT098009105074
+129,T2,Infected,Not treated,1,IT098009105078
+130,T2,Infected,Not treated,1,IT098009104438
+131,T2,Healthy,Not treated,3,IT098009104997
+132,T2,Infected,Treated,2,IT098009104782
+133,T2,,,,
+134,T2,Healthy,Treated,4,IT098009105076
+135,T2,Infected,Not treated,1,IT098009104412
+136,T2,Healthy,Not treated,3,IT098009104472
+137,T2,Healthy,Not treated,3,IT098009104758
+138,T2,Healthy,Treated,4,IT098009104424
+139,T2,Infected,Not treated,1,IT098009105075
+140,T2,Healthy,Not treated,3,IT098009104776
+141,T2,Infected,Treated,2,IT098009104483
+142,T2,Infected,Not treated,1,IT098009104468
+143,T2,Infected,Treated,2,IT098009104447
+144,T2,Infected,Not treated,1,IT098009104487
+145,T2,Healthy,Not treated,3,IT098009104477
+146,T2,Infected,Treated,2,IT098009104446
+147,T2,Infected,Treated,2,IT098009105068
+148,T2,Healthy,Treated,4,IT098009105040
+149,T2,Infected,Not treated,1,IT098009105025
+150,T2,Healthy,Not treated,3,IT098009105029
+151,T2,Infected,Treated,2,IT098009104756
+152,T2,Infected,Not treated,1,IT098009104464
+153,T2,Healthy,Treated,4,IT098009104757
+154,T2,Healthy,Not treated,3,IT098009105046
+155,T2,Healthy,Treated,4,IT098009105007
+156,T2,Healthy,Not treated,3,IT098009104419
+157,T2,Infected,Not treated,1,IT098009104460
+158,T2,Infected,Treated,2,IT098009104988
+159,T2,Healthy,Not treated,3,IT098009105059
+160,T2,Infected,Treated,2,IT098009104416
