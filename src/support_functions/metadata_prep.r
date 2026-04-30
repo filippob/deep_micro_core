@@ -105,12 +105,30 @@ length(unique(rab_sub_160$subject_id))
 
 ################################################################################
 
+################################################################################
+## rumen + hindgut metadata (FARM-INN): repo JBG8C
+farminn_mapping = "cow_FARMINN/mapping_file.csv"
+
+fname = file.path(prjfolder, metadata_folder, farminn_mapping)
+farminn_map = fread(fname)
+
+farminn_map <- farminn_map |>
+  mutate(`Sample ID` = ifelse(type == "FECI", paste("H_",nid,"_S",nid,"_L001", sep = ""), 
+                            paste("R_",nid,"_S",nid,"_L001", sep = "")),
+         `Project Name` = "FARM-INN", `Project ID` = "JBG8C") |>
+  select(nid, `Sample ID`, cow, `Project ID`, `Project Name`) |>
+  rename(sample_id = nid, subject_id = cow) |>
+  mutate(subject_id = paste(`Project ID`, subject_id, sep="-"), sample_id = as.character(sample_id))
+
+
+################################################################################
+
 ## DEEP MICRO CORE: GLOBAL METADATA
 metadata = fread(file.path(prjfolder, conf_file))
 
 metadata |> filter(`Project ID` == "PRJNA1103402", Tissue == "milk") |> nrow()
-sum(rab_sub_160$Experiment %in% metadata$`Sample ID`)
+sum(farminn_map$sample_id %in% metadata$`Sample ID`)
 
 
-bind_rows(rab_sub_160, rab_sub_219, casco_sub) |>
+bind_rows(rab_sub_160, rab_sub_219, casco_sub, farminn_map) |>
   nrow()
