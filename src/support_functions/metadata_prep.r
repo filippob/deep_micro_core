@@ -53,14 +53,15 @@ fwrite(x = casco_sub, file = fname, col.names = TRUE, sep = ",")
 casco_sub <- casco_sub |> 
   select(-c(`Experiment Title`, `Sample Accession`, tissue)) |>
   rename(`Sample ID` = `Experiment Accession`, `Project Name` = project, 
-         `Project ID` = repo, subject_id = goat)
+         `Project ID` = repo, subject_id = goat) |>
+  mutate(subject_id = paste(`Project ID`, subject_id, sep="-"))
 
 ################################################################################
 
 ################################################################################
 ## milk metadata (RABOLA-219): repo PRJEB72623
-rabola_submission = "milk_RABOLA/filereport_read_run_PRJEB72623.tsv"
-rabola_mapping = "milk_RABOLA/mapping_file.csv"
+rabola_submission = "milk_RABOLA-aloe/filereport_read_run_PRJEB72623.tsv"
+rabola_mapping = "milk_RABOLA-aloe/mapping_file.csv"
 
 fname = file.path(prjfolder, metadata_folder, rabola_submission)
 rab_sub_219 = fread(fname)
@@ -77,12 +78,39 @@ rab_sub_219 <- rab_sub_219 |>
 rab_sub_219 <- rab_sub_219 |> 
   rename(`Sample ID` = experiment_accession, `Project Name` = project, 
          `Project ID` = study_accession, subject_id = cow) |>
-  mutate(subject_id = as.character(subject_id))
+  mutate(subject_id = paste(`Project ID`, subject_id, sep="-"))
+
+length(unique(rab_sub_219$subject_id))
+
+################################################################################
+
+################################################################################
+## milk metadata (RABOLA-160): repo PRJNA1103402
+rabola_submission = "milk_RABOLA-bacteriocin/SraRunTable.csv"
+rabola_mapping = "milk_RABOLA-bacteriocin/mapping_file.csv"
+
+fname = file.path(prjfolder, metadata_folder, rabola_submission)
+rab_sub_160 = fread(fname)
+fname = file.path(prjfolder, metadata_folder, rabola_mapping)
+rab_map_160 = fread(fname)
+
+rab_sub_160 <- rab_sub_160 |> 
+  select(c(BioProject, BioSample, Cow_number, Experiment)) |>
+  mutate(project = "RABOLA") |>
+  rename(sample_id = BioSample, `Sample ID` = Experiment, `Project Name` = project, 
+         `Project ID` = BioProject, subject_id = Cow_number) |>
+  mutate(subject_id = paste(`Project ID`, subject_id, sep="-"))
+
+length(unique(rab_sub_160$subject_id))
 
 ################################################################################
 
 ## DEEP MICRO CORE: GLOBAL METADATA
 metadata = fread(file.path(prjfolder, conf_file))
 
-metadata |> filter(`Project ID` == "PRJNA1003434", Tissue == "feces") |> nrow()
-casco_sub$`Experiment Accession` %in% metadata$`Sample ID`
+metadata |> filter(`Project ID` == "PRJNA1103402", Tissue == "milk") |> nrow()
+sum(rab_sub_160$Experiment %in% metadata$`Sample ID`)
+
+
+bind_rows(rab_sub_160, rab_sub_219, casco_sub) |>
+  nrow()
